@@ -1,0 +1,176 @@
+.backdropp.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdropp {
+  position: fixed;
+  width: 335px;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.close-btn {
+  position: absolute;
+
+  top: 22px;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 20px;
+  margin-top: 24px;
+
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.svg-close {
+  fill: #ae1332;
+}
+
+.modal-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  text-align: start;
+  margin: 0 0 40px 0;
+  min-width: 100%;
+
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+
+  color: #ae1332;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+.cards-list {
+  display: block;
+  margin-bottom: 38px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 16px 32px 8px 20px;
+  margin-bottom: 12px;
+  border-radius: 20px;
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+.card-strawberry {
+  background-color: #f8766b;
+}
+
+.card-apple {
+  background-color: #edd251;
+}
+
+.card-fruits {
+  background-color: #9dc262;
+}
+
+.modal-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.04em;
+  margin-top: 4px;
+  margin-bottom: 2px;
+
+  color: #ffffff;
+}
+
+.modal-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+}
+
+.modal-click {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  margin: 0;
+}
+
+.form-information {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form {
+  display: flex;
+  margin-bottom: 14px;
+  opacity: 0.3;
+  border: 1px solid #000000;
+  border-radius: 100px;
+}
+
+.modal-form-element {
+  display: block;
+  height: 46px;
+  color: #000000;
+
+  width: 100%;
+  padding: 0;
+  padding-left: 24px;
+  border: none;
+  border-radius: 100px;
+}
+
+.modal-form-element::placeholder {
+  color: #000000;
+}
+
+.comments-element {
+  min-height: 132px;
+
+  max-width: 100%;
+  width: 295px;
+  padding: 0 24px 0 15px;
+
+  opacity: 0.3;
+  border: 1px solid #000000;
+  border-radius: 20px;
+}
+.comments-element::placeholder {
+  color: #000000;
+}
+
+.comments {
+  padding-bottom: 24px;
+  border: none;
+  border-radius: 20px;
+}
+
+.modal-btn-submit {
+  width: 92px;
+  height: 42px;
+  left: 20px;
+  top: 841px;
+
+  color: #ffffff;
+
+  background: #9dc162;
+  border: none;
+  border-radius: 100px;
+}
