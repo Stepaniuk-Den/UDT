@@ -1,0 +1,123 @@
+.section-fruits .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fruits-section-title {
+  margin: 0 0 14px 0;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.fruits-text {
+  text-align: center;
+  margin: 0 0 44px 0;
+}
+
+.fruits-list {
+  margin: 0 0 44px 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.fruits-item {
+  max-width: 335px;
+  border-radius: 20px;
+
+  margin: 0;
+  padding: 64px 24px 24px 24px;
+}
+
+.strawberry {
+  background: #f8766b;
+}
+
+.banana {
+  background: #edd251;
+}
+
+.watermelon {
+  background: #9dc262;
+}
+
+.lime {
+  background: #bfd663;
+}
+
+.apple {
+  background: #e93f29;
+}
+
+.peach {
+  background: #db4f4b;
+}
+
+.plums {
+  background: #9b5366;
+}
+
+.orange {
+  background: #f47f4c;
+}
+
+.kiwi {
+  background: #98b37e;
+}
+
+.fruits-item-title {
+  margin: 0 0 8px 0;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+}
+
+.fruits-item-text {
+  margin: 0 0 4px 0;
+}
+
+.fruits-item-image {
+  display: block;
+  width: 100%;
+  margin: 0 0 26px 0;
+}
+
+.blur {
+  position: relative;
+}
+
+.blur::after {
+  content: '';
+  position: absolute;
+  left: 17.4%;
+  bottom: -7.78%;
+  display: block;
+  width: 67.94%;
+  height: 15.57%;
+  border-radius: 50%;
+
+  background: #000000;
+  opacity: 0.1;
+  filter: blur(13.5914px);
+}
+
+.fruits-item-price {
+  max-width: 126px;
+  font-weight: 500;
+  padding: 12px 24px;
+
+  color: #ae1332;
+  background: #ffffff;
+  border-radius: 200px;
+}
