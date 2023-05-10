@@ -11,9 +11,16 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     
     <script type="module" crossorigin src="/UDT/assets/index-03f5ebd9.js"></script>
-    <link rel="stylesheet" href="/UDT/assets/index-9234d18d.css">
+    <link rel="stylesheet" href="/UDT/assets/index-0ac934b2.css">
   </head>
   <body>
     <!-- <header class="header">
@@ -327,6 +334,132 @@
     </div>
   </div>
 </section>
+
+      <div class="mobile-menu">
+    <div class="mobile-menu-wrapper">
+        <ul class="mobile-menu-list list">
+            <li class="mobile-menu-item">
+                <a href="./howitworks.html" class="mobile-menu-link">How It Work</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a href="./fruits.html" class="mobile-menu-link">Fruits</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a href="./contacts.html" class="mobile-menu-link">Contacts</a>
+            </li>
+        </ul>
+        <button type="button" class="mobile-menu-btn">
+            <svg class="mobile-menu-icon" width="20" height="18">
+                <use href="../img/icons.svg#icon-basket"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+      <!-- modal-window -->
+
+<div class="backdropp is-hidden modal-window" data-modal>
+  <h2 class="modal-title">Your Order</h2>
+  <button type="submit" class="close-btn" data-modal-close>
+    <svg class="svg-close" width="24px" height="24px">
+      <use>close</use>
+    </svg>
+  </button>
+
+  <ul class="cards-list">
+    <li class="card card-strawberry">
+      <div class="cards-info">
+        <h3 class="modal-subtitle">Strawberry Basket</h3>
+        <p class="modal-text">Plant</p>
+      </div>
+      <img width="88px" height="95px" src="" alt="Strawberry" />
+
+      <input type="checkbox" id="check" class="modal-click-fruits" />
+      <label class="click" for="check">
+        <span class="modal-form-name check">
+          <svg class="icon-check" width="16" height="16">
+            <use href=""></use>
+          </svg>
+        </span>
+      </label>
+    </li>
+
+    <li class="card card-apple">
+      <div class="cards-info">
+        <h3 class="modal-subtitle">Apple Basket</h3>
+        <p class="modal-text">Plant</p>
+      </div>
+      <img width="88px" height="95px" src="" alt="Apple" />
+    </li>
+
+    <li class="card card-fruits">
+      <div class="cards-info">
+        <h3 class="modal-subtitle">Fruits Basket</h3>
+        <p class="modal-text">Plant</p>
+      </div>
+      <img width="88px" height="95px" src="" alt="Fruits" />
+    </li>
+  </ul>
+
+  <form action="modal-open-form" class="form-information">
+    <label class="modal-form"
+      ><input
+        class="modal-form-element"
+        type="text"
+        placeholder="Enter full name..."
+    /></label>
+    <label class="modal-form"
+      ><input
+        class="modal-form-element"
+        type="text"
+        placeholder="Enter email..."
+    /></label>
+
+    <label class="modal-form"
+      ><input
+        class="modal-form-element"
+        type="text"
+        placeholder="Enter card.."
+        required
+        autofocus
+        autocomplete="cc-number"
+        name="cardnumber"
+    /></label>
+
+    <label class="comments modal-form">
+      <textarea
+        class="comments-element"
+        name=""
+        placeholder="Enter comments..."
+      ></textarea>
+    </label>
+
+    <button class="modal-btn-submit" type="submit">Submit</button>
+  </form>
+</div>
+
+      
+    <div class="backdrop is-hidden">
+    <div class="modal-thank-you">
+      <button class="modal-ty-btn data-modal-close">
+        <svg class="modal-ty" width="24" height="24">
+            <use href="/UDT/assets/icons-1de211a6.svg#icon-close"></use>
+        </svg>
+      </button>
+    <img class="raspberry-img" src="/UDT/assets/modal2-fruit-b07a9e6a.png"
+    srcset="/UDT/assets/modal2-mobile-63a930d5.png 207w, /UDT/assets/modal2-fruit-b07a9e6a.png 278w, /UDT/assets/modal2-mobile@2x-9d1bab06.png 207w, /UDT/assets/modal2-fruit@2x-e89b588e.png 278w"
+    sizes="(min-width: 768px) 278px, (min-width: 375px) 207px "  
+    alt="raspberry"
+    loading="lazy">
+      <!-- alt="raspberry" srcset="../img/mobile/modal2-mobile.png 1x, ../img/mobile/modal2-mobile@2x.png 2x"> -->
+      <h1 class="modal-title">THANK YOU</h1>
+      <p class="modal-text-ty">
+        Thank you for your order! Our team is preparing your box with fresh,
+        delicious fruits and vegetables, and we'll deliver it straight to
+        your doorstep. We appreciate your business and look forward to
+        providing you with the best possible experience!
+      </p>
+    </div>
+  </div>
 
     </main>
     <footer class="footer">
