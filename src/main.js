@@ -1,5 +1,5 @@
-import 'modal-order.js';
-import 'modal-thank.js';
+import './js/modal-order.js';
+import './js/modal-thank.js';
 
 
 (() => {
