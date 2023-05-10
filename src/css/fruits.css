@@ -1,7 +1,6 @@
-.section-fruits .container {
+.fruits-section .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .fruits-section-title {
@@ -120,4 +119,38 @@
   color: #ae1332;
   background: #ffffff;
   border-radius: 200px;
+}
+
+.btn-order {
+  display: flex;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  align-items: end;
+  justify-content: center;
+  gap: 6px;
+  padding: 26px 0;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+
+  border-radius: 50%;
+  border: none;
+
+  color: #ffffff;
+
+  background: #9dc262;
+}
+
+.icon-arrow {
+  fill: currentColor;
+  width: 14px;
+  height: 14px;
+}
+
+.btn-order-text {
+  transform: rotate(-14deg);
+  transform-origin: bottom left;
 }
