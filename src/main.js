@@ -1,7 +1,6 @@
 import './js/modal-order.js';
 import './js/modal-thank.js';
 
-
 // (() => {
 //   const refs = {
 //     openModalBtn: document.querySelector("[data-modal-open]"),
