@@ -7,13 +7,20 @@
 
 .backdropp {
   position: fixed;
-  width: 335px;
   max-width: 100%;
   min-height: 100%;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(46, 47, 66, 0.4);
+  opacity: 1;
+  visibility: visible;
 }
 
 .modal-window {
   position: absolute;
+  max-width: 335px;
+  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
