@@ -34,22 +34,42 @@
       <p class="logo-text">fresh harvest box</p>
     </a>
     <!-- </div> -->
-    <button class="basket-btn header-btn">
+    <button class="basket-btn header-btn" type="button">
       <svg class="basket-icon" width="24" height="24">
         <use href="./img/icons.svg#icon-basket"></use>
         <!-- <use href="../img/icons.svg#icon-basket"></use> -->
       </svg>
     </button>
-    <button class="menu-btn header-btn" type="button" data-modal-open>
-      <svg class="menu-icon" width="24" height="24">
+    <button class="menu-open-btn header-btn" type="button" js-open-menu>
+      <svg class="menu-open-icon" width="24" height="24">
         <use href="./img/icons.svg#icon-menu"></use>
       </svg>
     </button>
-    <button class="close-btn header-btn">
-      <svg class="close-icon" width="24" height="24">
+    <button class="menu-close-btn header-btn" type="button" js-close-menu>
+      <svg class="menu-close-icon" width="24" height="24">
         <use href="./img/icons.svg#icon-close"></use>
       </svg>
     </button>
   </div>
   <!-- mobile-header -->
+  <div class="overlay" js-menu-container>
+    <div class="mobile-menu-wrapper">
+      <ul class="mobile-menu-list list">
+        <li class="mobile-menu-item">
+          <a href="./howitworks.html" class="mobile-menu-link">How It Work</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./fruits.html" class="mobile-menu-link">Fruits</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./contacts.html" class="mobile-menu-link">Contacts</a>
+        </li>
+      </ul>
+      <button type="button" class="mobile-menu-btn">
+        <svg class="mobile-menu-icon" width="20" height="18">
+          <use href="../img/icons.svg#icon-basket"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </header>
