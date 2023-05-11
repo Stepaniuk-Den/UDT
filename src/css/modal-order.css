@@ -1,3 +1,4 @@
+/* ====== modal======== */
 .backdropp.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -9,16 +10,6 @@
   width: 335px;
   max-width: 100%;
   min-height: 100%;
-}
-
-.close-btn {
-  position: absolute;
-
-  top: 22px;
-  right: 20px;
-  margin: 0;
-  padding: 0;
-  border: none;
 }
 
 .modal-window {
@@ -34,9 +25,26 @@
   border-radius: 20px;
 }
 
-.svg-close {
-  fill: #ae1332;
+/* btn-close */
+
+.close-btn {
+  position: absolute;
+
+  top: 22px;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+
+  background-color: #ffffff;
+  border: none;
 }
+
+.svg-close {
+  background-color: inherit;
+  stroke: var(--color-red);
+}
+
+/* modal-information */
 
 .modal-title {
   font-weight: 500;
@@ -49,7 +57,7 @@
   letter-spacing: -0.04em;
   text-transform: uppercase;
 
-  color: #ae1332;
+  color: var(--color-red);
 
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
@@ -63,7 +71,6 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 
   padding: 16px 32px 8px 20px;
   margin-bottom: 12px;
@@ -73,6 +80,7 @@
 .card:last-child {
   margin-bottom: 0;
 }
+
 .card-strawberry {
   background-color: #f8766b;
 }
@@ -105,12 +113,52 @@
   color: #ffffff;
 }
 
-.modal-click {
+.modal-img-fruits {
+  margin-left: auto;
+}
+
+/* check */
+.modal-click-fruits {
   position: absolute;
   top: 14px;
   right: 14px;
   margin: 0;
+
+  opacity: 0;
 }
+
+.check {
+  position: absolute;
+  display: flex;
+  top: 14px;
+  right: 14px;
+  width: 16px;
+  height: 16px;
+  background-color: inherit;
+
+  border: 1.5px solid #ffffff;
+  border-radius: 4px;
+}
+
+.icon-check {
+  margin: auto;
+
+  fill: #ffffff;
+}
+
+.modal-click-fruits:checked + .click > .check.icon-check {
+  fill: #ffffff;
+  opacity: 1;
+}
+
+/* .checkbox:checked + .click > .modal-form-name.check {
+  fill: var(--background-style-color);
+  background: var(--active-button-color);
+  border: 1px solid var(--active-button-color);
+  border-radius: 2px;
+} */
+
+/* form================================= */
 
 .form-information {
   display: flex;
@@ -128,7 +176,6 @@
 .modal-form-element {
   display: block;
   height: 46px;
-  color: #000000;
 
   width: 100%;
   padding: 0;
@@ -141,26 +188,30 @@
   color: #000000;
 }
 
+.comments {
+  max-width: 100%;
+  margin-bottom: 24px;
+  border: none;
+  border-radius: 20px;
+}
+
 .comments-element {
+  display: block;
   min-height: 132px;
 
-  max-width: 100%;
-  width: 295px;
-  padding: 0 24px 0 15px;
+  width: 100%;
 
-  opacity: 0.3;
+  padding: 14px 24px 0 15px;
   border: 1px solid #000000;
   border-radius: 20px;
+
+  resize: none;
 }
 .comments-element::placeholder {
   color: #000000;
 }
 
-.comments {
-  padding-bottom: 24px;
-  border: none;
-  border-radius: 20px;
-}
+/* ===btn=== */
 
 .modal-btn-submit {
   width: 92px;
@@ -173,4 +224,17 @@
   background: #9dc162;
   border: none;
   border-radius: 100px;
+}
+
+@media screen and (min-width: 335px) {
+  .backdropp,
+  .modal-window {
+    width: 335px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1280px) {
 }
