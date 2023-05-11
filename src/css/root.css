@@ -30,3 +30,18 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+    /* width: calc(100% - 64px); */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    /* width: calc(100% - 64px); */
+    padding: 0 32px;
+  }
+}

@@ -1,12 +1,7 @@
-/* @media screen and (min-width: 375px) {
-    .container {
-        max-width: 375px;}
-
-} */
 
 .how-it-works-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .how-it-works-section-title {
@@ -32,7 +27,6 @@
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 
-
 .how-it-works-item {
     display: flex;
     align-items: center;
@@ -46,9 +40,9 @@
     background-color: #FFFFFF;
     border-radius: 20px;
 }
-    
+
 .how-it-works-item:not(:last-child) {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .how-it-works-link {
@@ -95,6 +89,31 @@
     }
 }
 
+.how-it-works-btn.second {
+  padding: 12px 18px;
+  background-color: #a1c864;
+}
+
+.how-it-works-btn.third {
+  padding: 12px 28px;
+  background-color: var(--color-yellow);
+}
+
+.how-it-works-list {
+  margin-bottom: 44px;
+}
+
+.how-it-works-item-desc {
+  letter-spacing: -0.04em;
+  color: var(--color-black);
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 375px) {
+  .how-it-works-item-desc {
+    font-size: calc((100vw - 320px) / (375 - 320) * (14 - 12) + 12px);
+  }
+}
 
 .gif-wrapper {
     margin-left: auto;
@@ -112,7 +131,6 @@
 }
 
 /* ========== TABLET ========== */
-
 
 @media screen and (min-width: 768px) {
     .container {
@@ -152,33 +170,31 @@
     }
 
 
-    /* ========== DESKTOP ========== */
+/* ========== DESKTOP ========== */
 
 @media screen and (min-width: 1280px) {
-    .container {
+  .container {
     max-width: 1280px;
 }
 
-.how-it-works-section {
+  .how-it-works-section {
     padding-top: 150px;
     padding-bottom: 150px;
-}
+  }
 
-
-.how-it-works-list {
+  .how-it-works-list {
     display: flex;
     justify-content: center;
     gap: 24px;
     margin-bottom: 80px;
-}
+  }
 
-
-.how-it-works-item {
+  .how-it-works-item {
     margin: 0;
     /* flex-basis: calc(100% - 24px * 2) / 3; */
-}
+  }
 
-.how-it-works-item:not(:last-child) {
+  .how-it-works-item:not(:last-child) {
     margin: 0;
     padding-right: 53px;
   }
