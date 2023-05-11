@@ -1,0 +1,263 @@
+h1 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 28px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+
+    position: absolute;
+    left: 50%;
+    top: -70px;
+    transform: translate(-50%);
+    z-index: 1;
+
+    width: 335px;
+}
+
+.yonggirl {
+    border-radius: 500px;
+
+    display: block;
+    width: 100%;
+    height: auto;
+
+    margin-top: 116px;
+
+}
+
+.hero-paragraph {
+    line-height: 1, 28;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.04em;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+
+    margin-top: 71px;
+}
+
+.hero-title {
+    font-size: 12px;
+    line-height: 1, 16;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+.hero-card-parag {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1, 16;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+    width: 155px;
+}
+
+.hero-btn-parag {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    background-color: #FFFFFF;
+    color: #AE1332;
+    border: none;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+    transform: rotate(-14deg);
+}
+
+.hero-btn-parag:hover {
+    color: #A4CB66;
+}
+
+.shop-btn {
+    background: #FFFFFF;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left: 50%;
+    bottom: -8%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+.hero-card-watermelon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 249px;
+    height: 387px;
+    background-color: #A4CB66;
+    border-radius: 500px;
+    margin-bottom: 44px;
+}
+
+.hero-card-strawberry {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 249px;
+    height: 387px;
+    background-color: #F5CE13;
+    border-radius: 500px;
+    margin-top: 44px;
+}
+
+.list-item-hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.item-hero {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1, 16;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+    border: 1px solid #FFFFFF;
+    border-radius: 1000px;
+    width: 120px;
+}
+
+.cards-items-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.smallbanana {
+    position: absolute;
+    left: 10%;
+    top: -10px;
+    transform: translate(-50%);
+}
+
+.smallstravbery {
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    transform: translate(-50%);
+}
+
+.wrapper-hero-btn {
+    position: relative;
+}
+
+.wrapper-hero-img {
+    position: relative;
+}
+
+.cards-items-watermelon {
+    display: contents;
+}
+
+.cards-items-strawberry {
+    display: contents;
+}
+
+@media screen and (min-width:768px) {
+
+    /* .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  } */
+
+    h1 {
+        width: 704px;
+        margin-top: 64px;
+        font-size: 50px;
+        line-height: 1.08;
+        top: -110px;
+    }
+
+    .cards-items-hero {
+        flex-direction: row;
+        margin-top: 44px;
+    }
+
+    .cards-items-watermelon {
+        display: block;
+        margin-right: 142px;
+    }
+
+    .cards-items-strawberry {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hero-paragraph {
+        width: 279px;
+        margin: 0;
+        margin-bottom: 45px;
+    }
+
+    .hero-card-strawberry {
+        margin: 0;
+        margin-bottom: 44px;
+    }
+
+    .item-hero-organic {
+        width: 125px;
+    }
+
+    .item-hero-products {
+        width: 133px;
+    }
+
+    .item-hero-basket {
+        width: 115px;
+    }
+
+    .item-hero-fruits {
+        width: 110px;
+    }
+
+    .list-item-hero {
+        width: 270px;
+        justify-content: flex-end;
+    }
+
+}
