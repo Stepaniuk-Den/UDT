@@ -21,14 +21,10 @@
 } */
 
 .page-header {
-  /* margin: 0 auto; */
   background-color: #fff;
-  /* max-width: 704px;
-  width: calc(100% - 40px); */
-  /* outline: 1px solid teal; */
 }
 
-.header-container {
+.header-container.container {
   position: relative;
   display: flex;
   align-items: center;
@@ -44,21 +40,14 @@
 
   font-size: 14px;
   line-height: 1.29;
-  /* identical to box height, or 129% */
   letter-spacing: -0.04em;
   color: var(--color-red);
 }
 
 .logo-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
   display: flex;
   align-items: center;
   gap: 8px;
-
   padding: 16px 0;
 }
 
@@ -70,7 +59,6 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
-  /* identical to box height, or 129% */
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: var(--color-red);
@@ -81,7 +69,6 @@
   border: transparent;
   height: 50px;
   padding: 0;
-  /* padding: 13px 0; */
 }
 
 .basket-btn {
@@ -103,6 +90,7 @@
   display: none;
   margin-left: auto;
 }
+
 .close-icon {
   stroke: var(--color-red);
 }
@@ -111,28 +99,17 @@
   .menu-btn {
     display: none;
   }
-  /* .close-btn {
-    display: none;
-  } */
-  /* .container {
-    max-width: 768px;
-  } */
 }
 
 @media screen and (max-width: 767px) {
   .basket-btn {
     display: none;
   }
-  /* .close-btn {
-    display: none;
-  } */
 
-  .logo-container {
-    /* top: 50%; */
-    left: 20px;
-    transform: translateY(-50%);
-    /* margin: 0 auto; */
+  .header-container {
+    max-width: 375px;
   }
+
   .page-header {
     margin: 0 auto;
   }
@@ -143,14 +120,22 @@
     display: flex;
     gap: 20px;
   }
+
   .header-container {
-    max-width: 1216px;
-    width: calc(100% - 64px);
+    max-width: 768px;
   }
-  .container {
-    /* max-width: 1216px;
-    width: calc(100% - 64px); */
-    padding: 0;
-    /* margin: 0 auto; */
+
+  .nav-list {
+    margin-right: 94px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header-container {
+    max-width: 1280px;
+  }
+
+  .nav-list {
+    margin-right: 322px;
   }
 }

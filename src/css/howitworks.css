@@ -1,14 +1,13 @@
-@media screen and (min-width: 375px) {
-    .container {
-        max-width: 375px;}
-
-}
 
 .how-it-works-section {
-    padding-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .how-it-works-section-title {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 335px;
     margin-bottom: 14px;
     font-size: 28px;
     font-weight: 500;
@@ -19,6 +18,9 @@
     }
 
 .how-it-works-section-desc {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 335px;
     margin-bottom: 44px;
     line-height: calc(18 / 14);
     text-align: center;
@@ -29,39 +31,43 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 335px;
     width: 100%;
-    height: 112px;
+    min-height: 112px;
     padding: 20px;
     background-color: #FFFFFF;
     border-radius: 20px;
 }
-    
+
 .how-it-works-item:not(:last-child) {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-.how-it-works-btn {
+.how-it-works-link {
     display: block;
-    min-width: 136px;
-    padding: 12px;
     margin-right: 14px;
+    padding: 12px 31.5px;
+    max-width: 136px;
+    width: 100%;
     border-radius: 200px;
-    border: none;
     font-size: 18px;
     font-weight: 400px;
     line-height: calc(24 / 18);
     letter-spacing: -0.04em;
+    text-align: center;
     background-color: var(--color-red);
     color: #FFFFFF;
-    cursor: pointer;
   }
    
-  .how-it-works-btn.second {
+  .how-it-works-link.second {
+    padding: 12px 18px;
     background-color: #A1C864;
   }
 
-  .how-it-works-btn.third {
+  .how-it-works-link.third {
+    padding: 12px 28px;
     background-color: var(--color-yellow);
   }
   
@@ -84,49 +90,43 @@
 }
 
 
-
 .gif-wrapper {
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
     max-width: 335px; 
     height: 476px;
     border-radius: 20px;
-    background-image: url(../images/gif-howitworks.gif);
+    background-image: url(../img/gif-howitworks.gif);
     overflow: hidden;
     background-size: cover;
-    background-repeat: no-repeat;  background-position: center;
+    background-repeat: no-repeat; 
+    background-position: center;
 }
 
 /* ========== TABLET ========== */
 
-
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        padding: 0 32px;
-    }
-    
+
     .how-it-works-section {
+        padding-top: 137px;
         padding-bottom: 144px;
     }
         
     .how-it-works-section-title {
+        max-width: 654px;
         font-size: 40px;
         line-height: calc(44 / 40);
     }
     
     .how-it-works-section-desc {
         max-width: 509px;
-        margin-left: auto;
-        margin-right: auto;
     }
     
-    
     .how-it-works-item {
-        margin-left: auto;
-        margin-right: auto;
         max-width: 389px;
         width: 100%;
-        height: 128px;
+        min-height: 128px;
         padding: 40px 20px;
     }
     
@@ -139,46 +139,33 @@
     }
     }
 
-
-    /* ========== DESKTOP ========== */
+/* ========== DESKTOP ========== */
 
 @media screen and (min-width: 1280px) {
-    .container {
-    max-width: 1280px;
-}
 
-.how-it-works-section {
-    padding-bottom: 155px;
-}
+  .how-it-works-section {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
 
-.how-it-works-section-title {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 654px;    
-}
-
-.how-it-works-list {
+  .how-it-works-list {
     display: flex;
     justify-content: center;
     gap: 24px;
     margin-bottom: 80px;
-}
+  }
 
-
-.how-it-works-item {
+  .how-it-works-item {
     margin: 0;
-    text-align: start;
     /* flex-basis: calc(100% - 24px * 2) / 3; */
-}
+  }
 
-.how-it-works-item:not(:last-child) {
+  .how-it-works-item:not(:last-child) {
     margin: 0;
     padding-right: 53px;
   }
 
   .gif-wrapper {
-    margin-left: auto;
-    margin-right: auto;
     max-width: 860px; 
 }
 }
