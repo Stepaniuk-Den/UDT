@@ -13,7 +13,7 @@
     opacity: 1;
     visibility: visible;
     pointer-events: initial;
-    transition: opacity 250ms, linear;
+    transition:opacity 250ms linear, visibility 250ms linear;
     z-index: 9;
   }
 
