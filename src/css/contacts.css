@@ -24,18 +24,12 @@
   text-transform: uppercase;
   color: #ffffff;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-  z-index: 1;
 }
 .contacts-form {
   display: none;
 }
 .contacts-text {
   display: none;
-}
-.contacts-img-mobile {
-  border: 1px solid #000000;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  border-radius: 20px;
 }
 .contacts-img-tablet {
   display: none;
@@ -121,7 +115,10 @@
   .contacts-form input::placeholder {
     color: #ffffff;
   }
-  .contacts-form input:invalid {
+  .contacts-input:not(:placeholder-shown):required:valid {
+    border: 1px solid #9dc162;
+  }
+  .contacts-input:not(:placeholder-shown):required:invalid {
     border: 1px solid red;
   }
   .contacts-btn {
