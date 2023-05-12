@@ -1,25 +1,4 @@
-/* .header {
-  padding: 20px 0;
-}
-
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
-}
-
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
-} */
-
+/*=============== HEADER ===============*/
 .page-header {
   background-color: #fff;
 }
@@ -38,7 +17,7 @@
 .nav-link {
   padding: 16px 0;
 
-  font-size: 14px;
+  /* font-size: 14px; */
   line-height: 1.29;
   letter-spacing: -0.04em;
   color: var(--color-red);
@@ -57,7 +36,7 @@
 
 .logo-text {
   font-weight: 700;
-  font-size: 14px;
+  /* font-size: 14px; */
   line-height: 1.29;
   letter-spacing: -0.04em;
   text-transform: uppercase;
@@ -79,24 +58,88 @@
   fill: var(--color-red);
 }
 
-.menu-btn {
+.menu-open-btn {
   margin-left: auto;
 }
-.menu-icon {
+
+.menu-open-icon {
   fill: var(--color-red);
 }
 
-.close-btn {
+.menu-close-btn {
   display: none;
   margin-left: auto;
 }
 
-.close-icon {
+.menu-close-icon {
   stroke: var(--color-red);
 }
 
+.mobile-menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  max-width: 375px;
+}
+
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  gap: 16px;
+  margin-top: 174px;
+}
+.mobile-menu-item {
+  text-align: center;
+}
+.mobile-menu-icon {
+  fill: #ffffff;
+}
+
+.mobile-menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-bottom: auto;
+}
+.overlay {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  z-index: 20;
+  overflow: auto;
+  transform: translateX(-100%);
+  transition: transform 250ms linear;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  background-color: var(--color-red);
+}
+
+.overlay.is-open {
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: initial;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* .overlay.is-open .menu-open-btn {
+  display: none;
+}
+.overlay.is-open .menu-close-btn {
+  display: block;
+} */
+
 @media screen and (min-width: 768px) {
-  .menu-btn {
+  .menu-open-btn {
     display: none;
   }
 }
