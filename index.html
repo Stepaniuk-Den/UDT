@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/UDT/assets/index-f44aec2d.js"></script>
-    <link rel="stylesheet" href="/UDT/assets/index-8f2ef3a4.css">
+    <link rel="stylesheet" href="/UDT/assets/index-96151c99.css">
   </head>
   <body>
     <!-- ============ HEADER ============ -->
@@ -104,7 +104,32 @@
     </div>
 
     <div class="wrapper-hero-btn">
-      <img class="yonggirl" src="/UDT/assets/heromain-mobile-d1518d62.png" alt="" />
+      <picture>
+        <source
+          srcset="
+            ./images/desktop/heromain-desktop.png    1x,
+            ./images/desktop/heromain-desktop@2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/tablet/heromain-tablet.png    1x,
+            ./images/tablet/heromain-tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/UDT/assets/heromain-mobile-d1518d62.png 1x, /UDT/assets/heromain-mobile@2x-6cae9ac9.png 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          class="yonggirl"
+          src="/UDT/assets/heromain-mobile-d1518d62.png"
+          alt="pretty girl"
+          loading="lazy"
+        />
+      </picture>
       <span class="shop-btn">
         <button class="hero-btn-parag" type="button">shop<br />now</button>
       </span>
