@@ -1,25 +1,4 @@
-/* .header {
-  padding: 20px 0;
-}
-
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
-}
-
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
-} */
-
+/*=============== HEADER ===============*/
 .page-header {
   background-color: #fff;
 }
@@ -79,17 +58,18 @@
   fill: var(--color-red);
 }
 
-/* .menu-open-btn {
+.menu-open-btn {
   margin-left: auto;
-} */
+}
+
 .menu-open-icon {
   fill: var(--color-red);
 }
 
-/* .menu-close-btn {
+.menu-close-btn {
   display: none;
   margin-left: auto;
-} */
+}
 
 .menu-close-icon {
   stroke: var(--color-red);
@@ -103,6 +83,7 @@
   width: 100vw;
   height: 100vh;
   padding: 0;
+  max-width: 375px;
 }
 
 .mobile-menu-list {
@@ -134,17 +115,33 @@
   position: fixed;
   top: 50px;
   left: 0;
-  z-index: 1;
+  z-index: 20;
   overflow: auto;
-  transform: translate(-100%, 0);
+  transform: translateX(-100%);
   transition: transform 250ms linear;
+  /* background-color: rgba(255, 255, 255, 0.5); */
   background-color: var(--color-red);
 }
 
+.overlay.is-open {
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: initial;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* .overlay.is-open .menu-open-btn {
+  display: none;
+}
+.overlay.is-open .menu-close-btn {
+  display: block;
+} */
+
 @media screen and (min-width: 768px) {
-  /* .menu-open-btn {
+  .menu-open-btn {
     display: none;
-  } */
+  }
 }
 
 @media screen and (max-width: 767px) {
