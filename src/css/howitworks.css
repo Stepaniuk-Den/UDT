@@ -37,7 +37,7 @@
     width: 100%;
     min-height: 112px;
     padding: 20px;
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     border-radius: 20px;
 }
 
@@ -53,12 +53,17 @@
     width: 100%;
     border-radius: 200px;
     font-size: 18px;
-    font-weight: 400px;
     line-height: calc(24 / 18);
     letter-spacing: -0.04em;
     text-align: center;
     background-color: var(--color-red);
-    color: #FFFFFF;
+    transition: scale 250ms linear, box-shadow 250ms linear;
+  }
+
+  .how-it-works-link:hover, 
+  .how-it-works-link:focus {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
   }
    
   .how-it-works-link.second {
