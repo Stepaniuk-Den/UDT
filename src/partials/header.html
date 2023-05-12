@@ -1,55 +1,59 @@
-<!-- <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header> -->
-<!-- Header -->
+<!-- ============ HEADER ============ -->
 <header class="page-header">
   <div class="header-container container">
     <nav class="page-navigation">
       <ul class="nav-list">
         <li class="nav-item">
-          <a class="nav-link" href="">How It Works</a>
+          <a class="nav-link" href="#how-it-works">How It Works</a>
         </li>
-        <li class="nav-item"><a class="nav-link" href="">Fruits</a></li>
+        <li class="nav-item"><a class="nav-link" href="#fruits">Fruits</a></li>
         <li class="nav-item">
-          <a class="nav-link" href="">Contacts</a>
+          <a class="nav-link" href="#contacts">Contacts</a>
         </li>
       </ul>
     </nav>
 
-    <!-- <div class="logo-container"> -->
     <a class="logo-container" href="./index.html">
       <svg class="logo-icon" width="16" height="16">
         <use href="./img/icons.svg#icon-logo"></use>
       </svg>
       <p class="logo-text">fresh harvest box</p>
     </a>
-    <!-- </div> -->
-    <button class="basket-btn header-btn">
+    <button class="basket-btn header-btn" type="button">
       <svg class="basket-icon" width="24" height="24">
         <use href="./img/icons.svg#icon-basket"></use>
-        <!-- <use href="../img/icons.svg#icon-basket"></use> -->
       </svg>
     </button>
-    <button class="menu-btn header-btn" type="button" data-modal-open>
-      <svg class="menu-icon" width="24" height="24">
+    <button class="menu-open-btn header-btn js-open-menu" type="button">
+      <svg class="menu-open-icon" width="24" height="24">
         <use href="./img/icons.svg#icon-menu"></use>
       </svg>
     </button>
-    <button class="close-btn header-btn">
-      <svg class="close-icon" width="24" height="24">
+    <button class="menu-close-btn header-btn js-close-menu" type="button">
+      <svg class="menu-close-icon" width="24" height="24">
         <use href="./img/icons.svg#icon-close"></use>
       </svg>
     </button>
   </div>
-  <!-- mobile-header -->
+  <!-- =========== MOBILE-HEADER ============ -->
+  <div class="overlay js-menu-container">
+    <div class="mobile-menu-wrapper">
+      <ul class="mobile-menu-list list">
+        <li class="mobile-menu-item">
+          <a href="#how-it-works" class="mobile-menu-link">How It Work</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#fruits" class="mobile-menu-link">Fruits</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#contacts" class="mobile-menu-link">Contacts</a>
+        </li>
+      </ul>
+      <button type="button" class="mobile-menu-btn">
+        <svg class="mobile-menu-icon" width="20" height="18">
+          <use href="./img/icons.svg#icon-basket"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </header>

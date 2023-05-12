@@ -11,7 +11,7 @@
       <li class="fruits-item strawberry">
         <h3 class="fruits-item-title">Strawberry</h3>
         <p class="fruits-item-text">Plant</p>
-        <div class="blur">
+        <div class="fruits-img-thumb">
           <img
             class="fruits-item-image"
             srcset="
@@ -27,8 +27,8 @@
       </li>
       <li class="fruits-item banana">
         <h3 class="fruits-item-title">Banana</h3>
-        <p>Plant</p>
-        <div class="blur">
+        <p class="fruits-item-text">Plant</p>
+        <div class="fruits-img-thumb">
           <img
             class="fruits-item-image"
             srcset="
@@ -44,8 +44,8 @@
       </li>
       <li class="fruits-item watermelon">
         <h3 class="fruits-item-title">Watermelon</h3>
-        <p>Plant</p>
-        <div class="blur">
+        <p class="fruits-item-text">Plant</p>
+        <div class="fruits-img-thumb">
           <img
             class="fruits-item-image"
             srcset="
@@ -61,8 +61,8 @@
       </li>
       <li class="fruits-item lime">
         <h3 class="fruits-item-title">Lime</h3>
-        <p>Plant</p>
-        <div class="blur">
+        <p class="fruits-item-text">Plant</p>
+        <div class="fruits-img-thumb">
           <img
             class="fruits-item-image"
             srcset="./img/fruits/lime.png 295w, ./img/fruits/lime@2x.png 590w"
@@ -75,8 +75,8 @@
       </li>
       <li class="fruits-item apple">
         <h3 class="fruits-item-title">Apple</h3>
-        <p>Plant</p>
-        <div class="blur">
+        <p class="fruits-item-text">Plant</p>
+        <div class="fruits-img-thumb">
           <img
             class="fruits-item-image"
             srcset="./img/fruits/apple.png 295w, ./img/fruits/apple@2x.png 590w"
@@ -89,8 +89,8 @@
       </li>
       <li class="fruits-item peach">
         <h3 class="fruits-item-title">Peach</h3>
-        <p>Plant</p>
-        <div class="blur">
+        <p class="fruits-item-text">Plant</p>
+        <div class="fruits-img-thumb">
           <img
             class="fruits-item-image"
             srcset="./img/fruits/peach.png 295w, ./img/fruits/peach@2x.png 590w"
@@ -103,8 +103,8 @@
       </li>
       <li class="fruits-item plums">
         <h3 class="fruits-item-title">Plums</h3>
-        <p>Plant</p>
-        <div class="blur">
+        <p class="fruits-item-text">Plant</p>
+        <div class="fruits-img-thumb">
           <img
             class="fruits-item-image"
             srcset="./img/fruits/plums.png 295w, ./img/fruits/plums@2x.png 590w"
@@ -117,8 +117,8 @@
       </li>
       <li class="fruits-item orange">
         <h3 class="fruits-item-title">Orange</h3>
-        <p>Plant</p>
-        <div class="blur">
+        <p class="fruits-item-text">Plant</p>
+        <div class="fruits-img-thumb">
           <img
             class="fruits-item-image"
             srcset="
@@ -134,8 +134,8 @@
       </li>
       <li class="fruits-item kiwi">
         <h3 class="fruits-item-title">Kiwi</h3>
-        <p>Plant</p>
-        <div class="blur">
+        <p class="fruits-item-text">Plant</p>
+        <div class="fruits-img-thumb">
           <img
             class="fruits-item-image"
             srcset="./img/fruits/kiwi.png 295w, ./img/fruits/kiwi@2x.png 590w"
@@ -153,5 +153,186 @@
       </svg>
       <span class="btn-order-text">Order</span>
     </button>
+
+    <!--============= modal-window============= -->
+
+    <div class="backdropp is-hidden" data-modal>
+      <div class="modal-window">
+        <button type="submit" class="close-btn" data-modal-close>
+          <svg class="svg-close" width="24px" height="24px">
+            <use href="./img/icons.svg#icon-close">close</use>
+          </svg>
+        </button>
+
+        <h2 class="modal-title">Your Order</h2>
+
+        <ul class="cards-list">
+          <li class="card card-strawberry">
+            <div class="">
+              <h3 class="modal-subtitle">Strawberry Basket</h3>
+              <p class="modal-text">Plant</p>
+            </div>
+            <img
+              class="modal-img-fruits"
+              src="./img/mobile/modal-fruit1-mobile.png"
+              srcset="
+                ./img/mobile/modal-fruit1-mobile.png     88w,
+                ./img/tablet/modal-fruit1-tablet.png    133w,
+                ./img/desktop/modal-fruit1.png          173w,
+                ./img/mobile/modal-fruit1-mobile@2x.png 176w,
+                ./img/tablet/modal-fruit1-tablet@2x.png 266w,
+                ./img/desktop/modal-fruit1@2x.png       346w
+              "
+              sizes="(min-width: 1280px) 173px, (min-width: 768px) 133px, 
+             (max-width: 767px) 88px, 100vw"
+              loading="lazy"
+              alt="Strawberry"
+            />
+
+            <input
+              type="checkbox"
+              id="strawberry"
+              class="modal-click-fruits"
+              name="Basket"
+              value="strawberry"
+            />
+            <label class="click" for="strawberry">
+              <span class="check">
+                <svg class="icon-check" width="6" height="6">
+                  <use href="./img/icons.svg#icon-check "></use>
+                </svg>
+              </span>
+            </label>
+          </li>
+
+          <li class="card card-apple">
+            <div class="">
+              <h3 class="modal-subtitle">Apple Basket</h3>
+              <p class="modal-text">Plant</p>
+            </div>
+            <img
+              class="modal-img-fruits"
+              src="./img/mobile/modal-fruit2-mobile.png"
+              srcset="
+                ./img/mobile/modal-fruit2-mobile.png     106w,
+                ./img/tablet/modal-fruit2-tablet.png     172w,
+                ./img/desktop/modal-fruit2.png           229w,
+                ../img/mobile/modal-fruit2-mobile@2x.png 212w,
+                ./img/tablet/modal-fruit2-tablet@2x.png  344w,
+                ./img/desktop/modal-fruit2@2x.png        458w
+              "
+              sizes="(min-width: 1280px) 229px, 
+            (min-width: 768px) 172px, 
+             (max-width: 767px) 106px"
+              loading="lazy"
+              alt="Apple"
+            />
+
+            <input
+              type="checkbox"
+              id="apple"
+              class="modal-click-fruits"
+              name="Basket"
+              value="apple"
+            />
+            <label class="click" for="apple">
+              <span class="check">
+                <svg class="icon-check" width="6" height="6">
+                  <use href="./img/icons.svg#icon-check "></use>
+                </svg>
+              </span>
+            </label>
+          </li>
+
+          <li class="card card-fruits">
+            <div class="">
+              <h3 class="modal-subtitle">Fruits Basket</h3>
+              <p class="modal-text">Plant</p>
+            </div>
+            <img
+              class="modal-img-fruits"
+              src="./img/mobile/modal-fruit3-mobile.png"
+              srcset="
+                ./img/mobile/modal-fruit3-mobile.png    107w,
+                ./img/tablet/modal-fruit3-tablet.png    172w,
+                ./img/desktop/modal-fruit3.png          229w,
+                ./img/mobile/modal-fruit3-mobile@2x.png 214w,
+                ./img/tablet/modal-fruit3-tablet@2x.png 344w,
+                ./img/desktop/modal-fruit3@2x.png       458w
+              "
+              sizes="(min-width: 1280px) 229px, 
+            (min-width: 768px) 172px, 
+             (max-width: 767px) 107px"
+              loading="lazy"
+              alt="Fruits"
+            />
+
+            <input
+              type="checkbox"
+              id="fruits"
+              class="modal-click-fruits"
+              name="Basket"
+              value="fruits"
+            />
+            <label class="click" for="fruits">
+              <span class="check">
+                <svg class="icon-check" width="6" height="6">
+                  <use href="./img/icons.svg#icon-check "></use>
+                </svg>
+              </span>
+            </label>
+          </li>
+        </ul>
+
+        <form action="modal-open-form" class="form-information">
+          <label class="modal-form"
+            ><input
+              class="modal-form-element"
+              type="text"
+              placeholder="Enter full name..."
+          /></label>
+          <label class="modal-form"
+            ><input
+              class="modal-form-element"
+              type="email"
+              placeholder="Enter email..."
+              required
+          /></label>
+
+          <label class="modal-form"
+            ><input
+              class="modal-form-element"
+              type="text"
+              placeholder="Enter card.."
+              autofocus
+              autocomplete="cc-number"
+              name="cardnumber"
+          /></label>
+
+          <label class="comments modal-form">
+            <textarea
+              class="comments-element"
+              name=""
+              placeholder="Enter comments..."
+            ></textarea>
+          </label>
+
+          <button class="modal-btn-submit" type="submit">Submit</button>
+        </form>
+
+        <img
+          class="modal-girl"
+          src="./img/tablet/modal-girl-tablet.png"
+          srcset="./img/Tablet/modal-girl-tablet.png 290px,
+    ./img/desktop/modal-girl.png 471px,
+./img/tablet/modal-girl-tablet@2x.png 580px,
+./img/desktop/modal-girl@2x.png 942px"
+          sizes="(min-width: 1280px) 471px, 
+            (min-width: 768px) 290px"
+          loading="lazy"
+          alt="girl"
+        />
+      </div>
+    </div>
   </div>
 </section>
