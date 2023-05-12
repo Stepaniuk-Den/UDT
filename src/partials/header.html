@@ -19,24 +19,20 @@
       </svg>
       <p class="logo-text">fresh harvest box</p>
     </a>
-    <button class="basket-btn header-btn" type="button">
-      <svg class="basket-icon" width="24" height="24">
+    <button class="header-btn" type="button">
+      <svg class="icon-header" width="24" height="24">
         <use href="./img/icons.svg#icon-basket"></use>
       </svg>
     </button>
-    <button class="menu-open-btn header-btn js-open-menu" type="button">
-      <svg class="menu-open-icon" width="24" height="24">
-        <use href="./img/icons.svg#icon-menu"></use>
-      </svg>
-    </button>
-    <button class="menu-close-btn header-btn js-close-menu" type="button">
-      <svg class="menu-close-icon" width="24" height="24">
-        <use href="./img/icons.svg#icon-close"></use>
+    <button type="button" class="menu-button" data-menu-button>
+      <svg width="24" height="24" aria-label="Togle mobile menu">
+        <use class="icon-cross" href="./img/icons.svg#icon-close"></use>
+        <use class="icon-menu" href="./img/icons.svg#icon-menu"></use>
       </svg>
     </button>
   </div>
   <!-- =========== MOBILE-HEADER ============ -->
-  <div class="overlay js-menu-container">
+  <div class="overlay" data-menu>
     <div class="mobile-menu-wrapper">
       <ul class="mobile-menu-list list">
         <li class="mobile-menu-item">

@@ -7,7 +7,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  outline: 1px solid teal;
+  /* outline: 1px solid teal; */
 }
 
 .nav-list {
@@ -45,33 +45,41 @@
 
 .header-btn {
   background-color: transparent;
-  border: transparent;
+  border: none;
   height: 50px;
   padding: 0;
-}
-
-.basket-btn {
   margin-left: auto;
 }
 
-.basket-icon {
-  fill: var(--color-red);
-}
-
-.menu-open-btn {
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
   margin-left: auto;
 }
 
-.menu-open-icon {
-  fill: var(--color-red);
-}
-
-.menu-close-btn {
+.menu-button .icon-cross {
   display: none;
-  margin-left: auto;
+}
+.menu-button.is-open .icon-cross {
+  display: block;
 }
 
-.menu-close-icon {
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.icon-header {
+  fill: var(--color-red);
+}
+
+.icon-menu {
+  fill: var(--color-red);
+}
+
+.icon-cross {
   stroke: var(--color-red);
 }
 
@@ -119,8 +127,8 @@
   overflow: auto;
   transform: translateX(-100%);
   transition: transform 250ms linear;
-  background-color: rgba(255, 255, 255, 0.5);
-  /* background-color: var(--color-red); */
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  background-color: var(--color-red);
 }
 
 .overlay.is-open {
@@ -131,13 +139,6 @@
   opacity: 1;
 }
 
-/* .overlay.is-open .menu-open-btn {
-  display: none;
-}
-.overlay.is-open .menu-close-btn {
-  display: block;
-} */
-
 .mobile-menu-link:active .overlay {
   pointer-events: none;
   visibility: hidden;
@@ -145,13 +146,13 @@
 }
 
 @media screen and (min-width: 768px) {
-  .menu-open-btn {
+  .menu-button {
     display: none;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .basket-btn {
+  .header-btn {
     display: none;
   }
 
