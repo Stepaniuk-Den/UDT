@@ -10,6 +10,8 @@
   --color-green: #a4cb66;
   --color-yellow: #f5ce13;
   --color-white: #ffffff;
+
+  --transition-dur-tfunc: 250ms ease-in-out;
 }
 
 body {

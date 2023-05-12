@@ -18,7 +18,35 @@
     </div>
 
     <div class="wrapper-hero-btn">
-      <img class="yonggirl" src="./img/mobile/heromain-mobile.png" alt="" />
+      <picture>
+        <source
+          srcset="
+            ./images/desktop/heromain-desktop.png    1x,
+            ./images/desktop/heromain-desktop@2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/tablet/heromain-tablet.png    1x,
+            ./images/tablet/heromain-tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./img/mobile/heromain-mobile.png    1x,
+            ./img/mobile/heromain-mobile@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          class="yonggirl"
+          src="./img/mobile/heromain-mobile.png"
+          alt="pretty girl"
+          loading="lazy"
+        />
+      </picture>
       <span class="shop-btn">
         <button class="hero-btn-parag" type="button">shop<br />now</button>
       </span>
