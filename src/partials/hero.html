@@ -3,13 +3,37 @@
     <div class="wrapper-hero-img">
       <h1>
         fresh harvest box <br />
-        is your 0ne-stop place for a delicious fruit basket
+        is your one-stop place for a delicious fruit basket
       </h1>
-      <img
-        class="smallbanana"
-        src="./img/mobile/hero-fruit1-mobile.png"
-        alt=""
-      />
+      <picture>
+        <source
+          srcset="
+            ./img/desktop/hero-fruit1.png    1x,
+            ./img/desktop/hero-fruit1@2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./img/tablet/hero-fruit1-tablet.png    1x,
+            ./img/tablet/hero-fruit1-tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./img/mobile/hero-fruit1-mobile.png    1x,
+            ./img/mobile/hero-fruit1-mobile@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          class="smallbanana"
+          src="./img/mobile/hero-fruit1-mobile.png"
+          alt="small banana"
+          loading="lazy"
+        />
+      </picture>
       <img
         class="smallstravbery"
         src="./img/mobile/hero-fruit2-mobile.png"
