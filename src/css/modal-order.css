@@ -6,6 +6,8 @@
 }
 
 .backdropp {
+  width: 335px;
+
   position: fixed;
   max-width: 100%;
   min-height: 100%;
@@ -37,6 +39,8 @@
   overflow: scroll;
 }
 
+/* ================= */
+
 /* btn-close */
 
 .close-btn {
@@ -56,8 +60,6 @@
   stroke: var(--color-red);
 }
 
-/* modal-information */
-
 .modal-title {
   font-weight: 500;
   font-size: 28px;
@@ -74,26 +76,34 @@
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 
-.cards-list {
+/* modal-information */
+fieldset {
+  padding: 0;
+  border: none;
   display: block;
   margin-bottom: 38px;
 }
 
 .card {
-  position: relative;
+  /* position: relative; */
   display: flex;
-  flex-wrap: wrap;
 
   padding: 16px 32px 8px 20px;
-  margin-bottom: 12px;
+
   border-radius: 20px;
 }
 
-.card:last-child {
+.form-fruits-modal {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.form-fruits-modal:last-child {
   margin-bottom: 0;
 }
 
 .card-strawberry {
+  /* display: flex; */
   background-color: #f8766b;
 }
 
@@ -105,7 +115,12 @@
   background-color: #9dc262;
 }
 
+.modal-titles {
+  display: block;
+}
+
 .modal-subtitle {
+  display: block;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
@@ -117,6 +132,7 @@
 }
 
 .modal-text {
+  display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
@@ -135,8 +151,6 @@
   top: 14px;
   right: 14px;
   margin: 0;
-
-  opacity: 0;
 }
 
 .check {
