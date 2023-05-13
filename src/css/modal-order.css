@@ -60,12 +60,6 @@
   stroke: var(--color-red);
 }
 
-/* modal-information */
-fieldset {
-  padding: 0;
-  border: none;
-}
-
 .modal-title {
   font-weight: 500;
   font-size: 28px;
@@ -82,7 +76,10 @@ fieldset {
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 
-.cards-list {
+/* modal-information */
+fieldset {
+  padding: 0;
+  border: none;
   display: block;
   margin-bottom: 38px;
 }
@@ -154,8 +151,6 @@ fieldset {
   top: 14px;
   right: 14px;
   margin: 0;
-
-  opacity: 1;
 }
 
 .check {
