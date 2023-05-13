@@ -315,22 +315,29 @@
                   <span class="modal-subtitle">Strawberry Basket</span>
                   <span class="modal-text">Plant</span>
                 </span>
-                <img
-                  class="modal-img-fruits"
-                  srcset="
-                    ./img/mobile/modal-fruit1-mobile.png     88w,
-                    ./img/tablet/modal-fruit1-tablet.png    133w,
-                    ./img/desktop/modal-fruit1.png          173w,
-                    ./img/mobile/modal-fruit1-mobile@2x.png 176w,
-                    ./img/tablet/modal-fruit1-tablet@2x.png 266w,
-                    ./img/desktop/modal-fruit1@2x.png       346w
-                  "
-                  sizes="(min-width: 1280px) 173px, (min-width: 768px) 133px,
-               (max-width: 767px) 88px, 100vw"
-                  loading="lazy"
-                  alt="Strawberry"
-                  src="./img/mobile/modal-fruit1-mobile.png"
-                />
+
+                <picture>
+                  <source
+                    srcset="
+                      ./img/desktop/modal-fruit1.png    1x,
+                      ./img/desktop/modal-fruit1@2x.png 2x
+                    "
+                    media="(min-width: 1280px)" />
+                  <source
+                    srcset="
+                      ./img/tablet/modal-fruit1-tablet.png    1x,
+                      ./img/tablet/modal-fruit1-tablet@2x.png 2x
+                    "
+                    media="(min-width: 768px)" />
+                  <source
+                    srcset="
+                      ./img/mobile/modal-fruit1-mobile.png    1x,
+                      ./img/mobile/modal-fruit1-mobile@2x.png 2x
+                    "
+                    media="(max-width: 767px)" />
+
+                  <img src="./img/mobile/modal-fruit1-mobile.png" alt=""
+                /></picture>
                 <span class="check">
                   <svg class="icon-check" width="6" height="6">
                     <use href="./img/icons.svg#icon-check "></use>
@@ -361,9 +368,9 @@
                     ./img/tablet/modal-fruit2-tablet@2x.png 344w,
                     ./img/desktop/modal-fruit2@2x.png       458w
                   "
-                  sizes="(min-width: 1280px) 229px,
-              (min-width: 768px) 172px,
-               (max-width: 767px) 106px"
+                  sizes="(min-width: 891px) 229px,
+              (min-width: 704px) 172px,
+               (max-width: 703px) 106px"
                   src="./img/mobile/modal-fruit2-mobile.png"
                   loading="lazy"
                   alt="Apple"
@@ -412,15 +419,65 @@
                 </span>
               </label>
             </div>
+
+            <!-- form -->
+
+            <label class="form-label">
+              <input
+                type="text"
+                class="form-input"
+                name="username"
+                placeholder="Enter full name..."
+                minlength="3"
+                required
+              />
+            </label>
+
+            <label class="form-label">
+              <input
+                type="email"
+                class="form-input"
+                name="mail"
+                placeholder="Enter email..."
+                required
+              />
+            </label>
+
+            <label class="form-label">
+              <input
+                class="form-input"
+                type="tel"
+                inputmode="numeric"
+                pattern="[0-9\s]{13,19}"
+                autocomplete="cc-number"
+                maxlength="19"
+                required
+                placeholder="Enter card.."
+            /></label>
+
+            <label class="form-label comments">
+              <textarea
+                class="form-input comments-element"
+                name="text"
+                placeholder="Enter comments..."
+              ></textarea>
+            </label>
+
+            <button class="modal-btn-submit" type="submit">Submit</button>
           </fieldset>
-          <!-- form -->
-          <fieldset>
-            <label class="modal-form" for="name">
+        </form>
+      </div>
+    </div>
+
+    <!-- ================================================= -->
+  </div>
+</section>
+
+<!-- <label class="modal-form">
               <input
                 class="modal-form-element"
                 type="name"
                 placeholder="Enter full name..."
-                id="name"
                 pattern
             /></label>
             <label class="modal-form"
@@ -440,22 +497,4 @@
                 autocomplete="cc-number"
                 name="cardnumber"
                 pattern
-            /></label>
-
-            <label class="comments">
-              <textarea
-                class="comments-element"
-                name="text"
-                placeholder="Enter comments..."
-              ></textarea>
-            </label>
-
-            <button class="modal-btn-submit" type="submit">Submit</button>
-          </fieldset>
-        </form>
-      </div>
-    </div>
-
-    <!-- ================================================= -->
-  </div>
-</section>
+            /></label> -->
