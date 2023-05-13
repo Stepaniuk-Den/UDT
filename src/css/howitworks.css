@@ -57,7 +57,7 @@
     letter-spacing: -0.04em;
     text-align: center;
     background-color: var(--color-red);
-    transition: scale 250ms linear, box-shadow 250ms linear;
+    transition: transform var(--transition-dur-tfunc), box-shadow var(--transition-dur-tfunc);
   }
 
   .how-it-works-link:hover, 
@@ -173,4 +173,36 @@
   .gif-wrapper {
     max-width: 860px; 
 }
+}
+
+
+/* ========== TO-TOP BTN ========== */
+
+.scroll-to-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--color-green);
+  background-image: url(../img/mobile/hero-fruit2-mobile.png);
+  background-size: 70px;
+  background-repeat: no-repeat; 
+  background-position: center;
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  position: fixed;
+  bottom: 20px;
+  right: 20px; 
+  transform: rotate(-14deg);
+  transition: color var(--transition-dur-tfunc), transform var(--transition-dur-tfunc);
+}
+
+.scroll-to-top:hover,
+.scroll-to-top:focus {
+  color: var(--color-green);
+  transform: rotate(0deg);
 }
