@@ -148,9 +148,10 @@ fieldset {
 /* check */
 .modal-click-fruits {
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 15px;
+  right: 15px;
   margin: 0;
+  opacity: 0;
 }
 
 .check {
@@ -179,6 +180,43 @@ fieldset {
 
 /* form================================= */
 
+.form-input:not(:placeholder-shown):required:valid {
+  border-color: green;
+}
+
+.form-input:not(:placeholder-shown):required:invalid {
+  border-color: red;
+}
+
+/* Example styles */
+* {
+  box-sizing: border-box;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.form-input {
+  padding: 14px 24px;
+  border: 1px solid #000000;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1, 29px;
+
+  letter-spacing: -0.04em;
+  outline: none;
+  border-radius: 100px;
+}
+
+.form-input::placeholder-show {
+  opacity: 0.3;
+  border-color: 1px solid #000000;
+}
+
 .form-information {
   display: flex;
   flex-direction: column;
@@ -190,30 +228,6 @@ fieldset {
   /* opacity: 0.3; */
 
   border: none;
-}
-
-.modal-form-element {
-  display: block;
-  height: 46px;
-  color: #000000;
-
-  width: 100%;
-  padding: 0;
-  padding-left: 24px;
-  border: 1px solid #000000;
-  border-radius: 100px;
-  opacity: 0.3;
-}
-
-.modal-form-element::placeholder {
-  color: #000000;
-  /* opacity: 0.3; */
-  /* border: 1px solid #000000;
-  border-radius: 100px; */
-}
-
-.modal-form-element:invalid {
-  border-color: blue;
 }
 
 .comments {
@@ -234,11 +248,6 @@ fieldset {
   border-radius: 20px;
 
   resize: none;
-}
-.comments-element::placeholder {
-  opacity: 0.3;
-  color: #000000;
-  border-color: #000000;
 }
 
 /* ===btn=== */
@@ -273,6 +282,7 @@ fieldset {
   .modal-window {
     padding: 40px;
   }
+
   /* btn-close */
   .close-btn {
     top: 20px;
@@ -316,37 +326,37 @@ fieldset {
     flex-direction: column;
   }
 
-  /* .modal-form {
+  .modal-form {
     display: flex;
     margin-bottom: 14px;
     opacity: 0.3;
 
     border: none;
-  } */
+  }
 
   .modal-form-element {
-    /* display: block;
+    display: block;
     height: 46px;
-    color: #000000; */
+    color: #000000;
 
     width: 50%;
-    /* padding: 0;
+    padding: 0;
     padding-left: 24px;
     border: 1px solid #000000;
     border-radius: 100px;
-    opacity: 0.3; */
+    opacity: 0.3;
   }
 
-  /* .modal-form-element::placeholder {
+  .modal-form-element::placeholder {
     color: #000000;
     opacity: 0.3;
     border: 1px solid #000000;
-  border-radius: 100px;
-  } */
+    border-radius: 100px;
+  }
 
-  /* .modal-form-element:invalid {
+  .modal-form-element:invalid {
     border-color: blue;
-  } */
+  }
 
   .comments {
     max-width: 50%;
