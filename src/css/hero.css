@@ -15,7 +15,7 @@ h1 {
 
   position: absolute;
   left: 50%;
-  top: 85px;
+  top: -50px;
   transform: translate(-50%);
   z-index: 1;
 
@@ -30,6 +30,12 @@ h1 {
   height: auto;
 
   margin-top: 116px;
+
+  padding: 17px;
+  background-color: var(--color-red);
+
+  box-shadow: 0px -2px 0px 0px rgba(174, 19, 50, 0.5),
+    0px 1.5px 0px 0.4px rgba(255, 255, 255, 0.5);
 }
 
 .hero-paragraph {
@@ -107,6 +113,7 @@ h1 {
   z-index: 1;
 }
 
+
 .hero-card-watermelon {
   display: flex;
   flex-direction: column;
@@ -175,7 +182,6 @@ h1 {
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   border: 1px solid #ffffff;
   border-radius: 1000px;
-  /* width: 120px; */
   flex-basis: calc((100% - 8px) / 2);
 
   padding: 12px 32px;
@@ -190,15 +196,15 @@ h1 {
 
 .smallbanana {
   position: absolute;
-  left: 5%;
-  top: 130px;
+  left: 6%;
+  top: 1px;
   transform: translate(-50%);
 }
 
 .smallstravbery {
   position: absolute;
   right: -35px;
-  top: 80px;
+  top: -50px;
   transform: translate(-50%);
 }
 
@@ -299,4 +305,35 @@ h1 {
     font-size: 28px;
     line-height: 28px;
   }
+}
+
+@media screen and (min-width: 1280px) {
+  h1 {
+    width: 898px;
+    margin-top: -40px;
+  }
+
+  .cards-items-hero {
+    position: relative;
+    bottom: 500px;
+  }
+
+  .section-hero {
+    max-height: 1000px;
+  }
+
+  .cards-items-strawberry {
+    margin-bottom: 300px;
+  }
+
+  .smallbanana {
+    left: 25%;
+    top: 150px;
+  }
+
+  .smallstravbery {
+    right: 23%;
+    top: 70px;
+  }
+
 }

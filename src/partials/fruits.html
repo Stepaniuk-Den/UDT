@@ -283,7 +283,7 @@
       </li>
     </ul>
     <button class="btn-order" type="button" data-modal-open>
-      <svg class="icon-arrow" width="14" heigth="14">
+      <svg class="icon-arrow" width="14" height="14">
         <use href="./img/icons.svg#icon-arrow"></use>
       </svg>
       <span class="btn-order-text">Order</span>
@@ -315,22 +315,32 @@
                   <span class="modal-subtitle">Strawberry Basket</span>
                   <span class="modal-text">Plant</span>
                 </span>
-                <img
-                  class="modal-img-fruits"
-                  srcset="
-                    ./img/mobile/modal-fruit1-mobile.png     88w,
-                    ./img/tablet/modal-fruit1-tablet.png    133w,
-                    ./img/desktop/modal-fruit1.png          173w,
-                    ./img/mobile/modal-fruit1-mobile@2x.png 176w,
-                    ./img/tablet/modal-fruit1-tablet@2x.png 266w,
-                    ./img/desktop/modal-fruit1@2x.png       346w
-                  "
-                  sizes="(min-width: 1280px) 173px, (min-width: 768px) 133px,
-               (max-width: 767px) 88px, 100vw"
-                  loading="lazy"
-                  alt="Strawberry"
-                  src="./img/mobile/modal-fruit1-mobile.png"
-                />
+
+                <picture>
+                  <source
+                    srcset="
+                      ./img/Desktop/modal-fruit1.png    1x,
+                      ./img/Desktop/modal-fruit1@2x.png 2x
+                    "
+                    media="(min-width: 1280px)" />
+                  <source
+                    srcset="
+                      ./img/Tablet/modal-fruit1-tablet.png    1x,
+                      ./img/Tablet/modal-fruit1-tablet@2x.png 2x
+                    "
+                    media="(min-width: 768px)" />
+                  <source
+                    srcset="
+                      ./img/mobile/modal-fruit1-mobile.png    1x,
+                      ./img/mobile/modal-fruit1-mobile@2x.png 2x
+                    "
+                    media="(max-width: 767px)" />
+
+                  <img
+                    src="./img/mobile/modal-fruit1-mobile.png"
+                    aria-label="Strawberry"
+                    loading="lazy"
+                /></picture>
                 <span class="check">
                   <svg class="icon-check" width="6" height="6">
                     <use href="./img/icons.svg#icon-check "></use>
@@ -351,23 +361,33 @@
                   <span class="modal-subtitle"> Apple Basket </span>
                   <span class="modal-text">Plant</span>
                 </span>
-                <img
-                  class="modal-img-fruits"
-                  srcset="
-                    ./img/mobile/modal-fruit2-mobile.png    106w,
-                    ./img/tablet/modal-fruit2-tablet.png    172w,
-                    ./img/desktop/modal-fruit2.png          229w,
-                    ./img/mobile/modal-fruit2-mobile@2x.png 212w,
-                    ./img/tablet/modal-fruit2-tablet@2x.png 344w,
-                    ./img/desktop/modal-fruit2@2x.png       458w
-                  "
-                  sizes="(min-width: 1280px) 229px,
-              (min-width: 768px) 172px,
-               (max-width: 767px) 106px"
-                  src="./img/mobile/modal-fruit2-mobile.png"
-                  loading="lazy"
-                  alt="Apple"
-                />
+
+                <picture>
+                  <source
+                    srcset="
+                      ./img/Desktop/modal-fruit2.png    1x,
+                      ./img/Desktop/modal-fruit2@2x.png 2x
+                    "
+                    media="(min-width: 1280px)" />
+                  <source
+                    srcset="
+                      ./img/Tablet/modal-fruit2-tablet.png    1x,
+                      ./img/Tablet/modal-fruit2-tablet@2x.png 2x
+                    "
+                    media="(min-width: 768px)" />
+                  <source
+                    srcset="
+                      ./img/mobile/modal-fruit2-mobile.png    1x,
+                      ./img/mobile/modal-fruit2-mobile@2x.png 2x
+                    "
+                    media="(max-width: 767px)" />
+
+                  <img
+                    src="./img/mobile/modal-fruit2-mobile.png"
+                    aria-label="Apple"
+                    loading="lazy"
+                /></picture>
+
                 <span class="check">
                   <svg class="icon-check" width="6" height="6">
                     <use href="./img/icons.svg#icon-check "></use>
@@ -379,32 +399,42 @@
             <div class="form-fruits-modal">
               <input
                 type="checkbox"
-                id="fruits"
+                id="fruits-oll"
                 class="modal-click-fruits"
                 name="Basket"
               />
-              <label class="click card card-fruits" for="fruits">
+              <label class="click card card-fruits" for="fruits-oll">
                 <span class="modal-titles">
                   <span class="modal-subtitle"> Fruits Basket </span>
                   <span class="modal-text">Plant</span>
                 </span>
-                <img
-                  class="modal-img-fruits"
-                  srcset="
-                    ./img/mobile/modal-fruit3-mobile.png    107w,
-                    ./img/tablet/modal-fruit3-tablet.png    172w,
-                    ./img/desktop/modal-fruit3.png          229w,
-                    ./img/mobile/modal-fruit3-mobile@2x.png 214w,
-                    ./img/tablet/modal-fruit3-tablet@2x.png 344w,
-                    ./img/desktop/modal-fruit3@2x.png       458w
-                  "
-                  sizes="(min-width: 1280px) 229px,
-              (min-width: 768px) 172px,
-               (max-width: 767px) 107px"
-                  src="./img/mobile/modal-fruit3-mobile.png"
-                  loading="lazy"
-                  alt="Fruits"
-                />
+
+                <picture>
+                  <source
+                    srcset="
+                      ./img/Desktop/modal-fruit3.png    1x,
+                      ./img/Desktop/modal-fruit3@2x.png 2x
+                    "
+                    media="(min-width: 1280px)" />
+                  <source
+                    srcset="
+                      ./img/Tablet/modal-fruit3-tablet.png    1x,
+                      ./img/Tablet/modal-fruit3-tablet@2x.png 2x
+                    "
+                    media="(min-width: 768px)" />
+                  <source
+                    srcset="
+                      ./img/mobile/modal-fruit3-mobile.png    1x,
+                      ./img/mobile/modal-fruit3-mobile@2x.png 2x
+                    "
+                    media="(max-width: 767px)" />
+
+                  <img
+                    src="./img/mobile/modal-fruit3-mobile.png"
+                    aria-label="Fruits"
+                    loading="lazy"
+                /></picture>
+
                 <span class="check">
                   <svg class="icon-check" width="6" height="6">
                     <use href="./img/icons.svg#icon-check "></use>
@@ -412,180 +442,82 @@
                 </span>
               </label>
             </div>
+
+            <!-- form -->
+
+            <label class="form-label">
+              <input
+                type="text"
+                class="form-input"
+                name="username"
+                placeholder="Enter full name..."
+                minlength="3"
+                required
+              />
+            </label>
+
+            <label class="form-label">
+              <input
+                type="email"
+                class="form-input"
+                name="mail"
+                placeholder="Enter email..."
+                required
+              />
+            </label>
+
+            <label class="form-label">
+              <input
+                class="form-input"
+                type="tel"
+                inputmode="numeric"
+                pattern="[0-9\s]{13,19}"
+                autocomplete="cc-number"
+                maxlength="19"
+                required
+                placeholder="Enter card.."
+            /></label>
+
+            <label class="form-label comments">
+              <textarea
+                class="form-input comments-element"
+                name="text"
+                placeholder="Enter comments..."
+              ></textarea>
+            </label>
+
+            <button class="modal-btn-submit" type="submit">Submit</button>
           </fieldset>
         </form>
       </div>
     </div>
 
     <!-- ================================================= -->
-    <!-- <div class="backdropp is-hidden" data-modal>
-      <div class="modal-window">
-        <button type="submit" class="close-btn" data-modal-close>
-          <svg class="svg-close" width="24px" height="24px">
-            <use href="./img/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-
-        <h2 class="modal-title">Your Order</h2>
-
-        <form action="modal-open-form" class="form-information">
-          <fieldset class="cards-list">
-            <label class="card card-strawberry">
-              <span class="modal-titles">
-                <span class="modal-subtitle">Strawberry Basket</span>
-                <span class="modal-text">Plant</span>
-              </span>
-              <img
-                class="modal-img-fruits"
-                srcset="
-                  ./img/mobile/modal-fruit1-mobile.png     88w,
-                  ./img/tablet/modal-fruit1-tablet.png    133w,
-                  ./img/desktop/modal-fruit1.png          173w,
-                  ./img/mobile/modal-fruit1-mobile@2x.png 176w,
-                  ./img/tablet/modal-fruit1-tablet@2x.png 266w,
-                  ./img/desktop/modal-fruit1@2x.png       346w
-                "
-                sizes="(min-width: 1280px) 173px, (min-width: 768px) 133px, 
-             (max-width: 767px) 88px, 100vw"
-                src="./img/mobile/modal-fruit1-mobile.png"
-                loading="lazy"
-                alt="Strawberry"
-                src="./img/mobile/modal-fruit1-mobile.png"
-              />
-
-              <input
-                type="checkbox"
-                id="strawberry"
-                class="modal-click-fruits"
-                name="Basket"
-                value="apple"
-              />
-              <label class="click" for="strawberry">
-                <span class="check">
-                  <svg class="icon-check" width="6" height="6">
-                    <use href="./img/icons.svg#icon-check "></use>
-                  </svg>
-                </span>
-              </label>
-            </label>
-
-            <label class="card card-apple">
-              <span class="modal-titles">
-                <span class="modal-subtitle"> Apple Basket </span>
-                <span class="modal-text">Plant</span>
-              </span>
-              <img
-                class="modal-img-fruits"
-                srcset="
-                  ./img/mobile/modal-fruit2-mobile.png    106w,
-                  ./img/tablet/modal-fruit2-tablet.png    172w,
-                  ./img/desktop/modal-fruit2.png          229w,
-                  ./img/mobile/modal-fruit2-mobile@2x.png 212w,
-                  ./img/tablet/modal-fruit2-tablet@2x.png 344w,
-                  ./img/desktop/modal-fruit2@2x.png       458w
-                "
-                sizes="(min-width: 1280px) 229px, 
-            (min-width: 768px) 172px, 
-             (max-width: 767px) 106px"
-                src="./img/mobile/modal-fruit2-mobile.png"
-                loading="lazy"
-                alt="Apple"
-              />
-
-              <input
-                type="checkbox"
-                id="apple"
-                class="modal-click-fruits"
-                name="Basket"
-                value="apple"
-              />
-              <label class="click" for="apple">
-                <span class="check">
-                  <svg class="icon-check" width="6" height="6">
-                    <use href="./img/icons.svg#icon-check "></use>
-                  </svg>
-                </span>
-              </label>
-            </label>
-
-            <label class="card card-fruits">
-              <span class="modal-titles">
-                <span class="modal-subtitle"> Fruits Basket </span>
-                <span class="modal-text">Plant</span>
-              </span>
-              <img
-                class="modal-img-fruits"
-                srcset="
-                  ./img/mobile/modal-fruit3-mobile.png    107w,
-                  ./img/tablet/modal-fruit3-tablet.png    172w,
-                  ./img/desktop/modal-fruit3.png          229w,
-                  ./img/mobile/modal-fruit3-mobile@2x.png 214w,
-                  ./img/tablet/modal-fruit3-tablet@2x.png 344w,
-                  ./img/desktop/modal-fruit3@2x.png       458w
-                "
-                sizes="(min-width: 1280px) 229px, 
-            (min-width: 768px) 172px, 
-             (max-width: 767px) 107px"
-                src="./img/mobile/modal-fruit3-mobile.png"
-                loading="lazy"
-                alt="Fruits"
-              />
-
-              <input
-                type="checkbox"
-                id="fruits"
-                class="modal-click-fruits"
-                name="Basket"
-                value="fruits"
-              />
-              <label class="click" for="fruits">
-                <span class="check">
-                  <svg class="icon-check" width="6" height="6">
-                    <use href="./img/icons.svg#icon-check "></use>
-                  </svg>
-                </span>
-              </label>
-            </label>
-          </fieldset> -->
-    <!-- ========form name======== -->
-    <!-- <label class="modal-form" for="name">
-            <input
-              class="modal-form-element"
-              type="name"
-              placeholder="Enter full name..."
-              id="name"
-              pattern
-          /></label>
-          <label class="modal-form"
-            ><input
-              class="modal-form-element"
-              type="email"
-              placeholder="Enter email..."
-              pattern
-          /></label>
-
-          <label class="modal-form"
-            ><input
-              class="modal-form-element"
-              type="number"
-              placeholder="Enter card.."
-              autofocus
-              autocomplete="cc-number"
-              name="cardnumber"
-              pattern
-          /></label>
-
-          <label class="comments">
-            <textarea
-              class="comments-element"
-              name="text"
-              placeholder="Enter comments..."
-            ></textarea>
-          </label>
-
-          <button class="modal-btn-submit" type="submit">Submit</button>
-        </form>
-      </div>
-    </div> -->
   </div>
 </section>
+
+<!-- <label class="modal-form">
+              <input
+                class="modal-form-element"
+                type="name"
+                placeholder="Enter full name..."
+                pattern
+            /></label>
+            <label class="modal-form"
+              ><input
+                class="modal-form-element"
+                type="email"
+                placeholder="Enter email..."
+                pattern
+            /></label>
+
+            <label class="modal-form"
+              ><input
+                class="modal-form-element"
+                type="number"
+                placeholder="Enter card.."
+                autofocus
+                autocomplete="cc-number"
+                name="cardnumber"
+                pattern
+            /></label> -->

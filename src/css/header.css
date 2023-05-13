@@ -178,6 +178,10 @@
   .nav-list {
     margin-right: 94px;
   }
+
+  .overlay {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1280px) {
