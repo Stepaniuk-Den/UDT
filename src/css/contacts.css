@@ -26,8 +26,68 @@
   color: var(--color-white);
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
+.contacts-email {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .contacts-form {
-  display: none;
+  display: flex;
+  height: 48px;
+  position: relative;
+  width: 270px;
+  margin-top: 44px;
+}
+.contacts-input {
+  background-color: transparent;
+  border-radius: 100px 0 0 100px;
+  border: 1px solid var(--color-white);
+  outline: 1px solid transparent;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  opacity: 0.5;
+  padding-left: 24px;
+  padding-right: 35px;
+  width: 220px;
+  color: var(--color-white);
+  transition: border var(--transition-dur-tfunc);
+}
+.contacts-input:focus {
+  border: 1px solid #9dc162;
+}
+.contacts-form input::placeholder {
+  color: var(--color-white);
+}
+.contacts-input:not(:placeholder-shown):required:valid {
+  border: 1px solid #9dc162;
+  opacity: 0.8;
+}
+.contacts-input:not(:placeholder-shown):required:invalid {
+  border: 1px solid red;
+  opacity: 0.8;
+}
+.contacts-btn {
+  position: absolute;
+  right: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  color: var(--color-white);
+  background: #9dc162;
+  border-radius: 100px;
+  padding: 15px 35px;
+  border: none;
+  transition: background-color var(--transition-dur-tfunc),
+    color var(--transition-dur-tfunc);
+}
+.contacts-btn:hover,
+.contacts-btn:focus {
+  background-color: var(--color-white);
+  color: #9dc162;
 }
 .contacts-text {
   display: none;
@@ -69,12 +129,6 @@
     flex-wrap: wrap;
     gap: 16px;
   }
-  .contacts-email {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
   .contacts-text {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -93,55 +147,8 @@
     display: flex;
     height: 48px;
     position: relative;
-    min-width: 292px;
-  }
-  .contacts-input {
-    background-color: transparent;
-    border-radius: 100px 0 0 100px;
-    border: 1px solid var(--color-white);
-    outline: 1px solid transparent;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.04em;
-    opacity: 0.5;
-    padding-left: 24px;
-    padding-right: 35px;
-    width: 220px;
-    color: var(--color-white);
-    transition: border var(--transition-dur-tfunc);
-  }
-  .contacts-input:focus {
-    border: 1px solid #9dc162;
-  }
-  .contacts-form input::placeholder {
-    color: var(--color-white);
-  }
-  .contacts-input:not(:placeholder-shown):required:valid {
-    border: 1px solid #9dc162;
-  }
-  .contacts-input:not(:placeholder-shown):required:invalid {
-    border: 1px solid red;
-  }
-  .contacts-btn {
-    position: absolute;
-    right: 0;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.04em;
-    color: var(--color-white);
-    background: #9dc162;
-    border-radius: 100px;
-    padding: 15px 35px;
-    border: none;
-    transition: background-color var(--transition-dur-tfunc),
-      color var(--transition-dur-tfunc);
-  }
-  .contacts-btn:hover,
-  .contacts-btn:focus {
-    background-color: var(--color-white);
-    color: #9dc162;
+    width: 292px;
+    margin-top: 0;
   }
 }
 
