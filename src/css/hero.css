@@ -1,3 +1,7 @@
+.hero-container {
+  padding-top: 56px;
+}
+
 h1.hero-title {
   position: relative;
   font-weight: 500;
@@ -106,45 +110,9 @@ h1.hero-title {
   z-index: 1;
 }
 
-.hero-paragraph {
-  max-width: 279px;
-  margin: 0 0 44px 0;
-  line-height: 1.29;
-  letter-spacing: -0.04em;
-}
-
-.hero-card-parag {
-  max-width: 155px;
-  margin: 0;
-
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.16;
-
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.hero-btn-parag:hover {
+.link-shopnow:hover,
+.link-shopnow:focus {
   color: #a4cb66;
-}
-
-.img-decor-hero {
-  position: relative;
-  margin-bottom: 2px;
-}
-
-.img-decor-hero::after {
-  content: '';
-  background: #000000;
-  mix-blend-mode: normal;
-  opacity: 0.1;
-  filter: blur(13.5914px);
-  position: absolute;
-  width: 100%;
-  height: 38px;
-  top: 80%;
-  right: 1%;
 }
 
 .cards-items-watermelon {
@@ -152,6 +120,13 @@ h1.hero-title {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.hero-paragraph {
+  max-width: 279px;
+  margin: 0 0 44px 0;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
 }
 
 .hero-card-watermelon {
@@ -167,16 +142,46 @@ h1.hero-title {
   border-radius: 500px;
 }
 
-img {
-  width: 100%;
-}
-
-.hero-title {
+.hero-title-watermelon {
   margin: 0 0 61px 0;
   font-size: 12px;
   line-height: 1.17;
 
   text-align: center;
+}
+
+.img-decor-hero {
+  position: relative;
+  margin-bottom: 2px;
+}
+
+.hero-card-parag {
+  max-width: 155px;
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.img-decor-hero::after {
+  content: '';
+  background: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.1;
+  filter: blur(13.5914px);
+  position: absolute;
+  width: 100%;
+  height: 38px;
+  top: 80%;
+  right: 1%;
+}
+
+img {
+  width: 100%;
 }
 
 .cards-items-strawberry {
@@ -198,8 +203,12 @@ img {
   border-radius: 500px;
 }
 
-h2.hero-title {
+.hero-title-strawberry {
   margin: 0 0 19px 0;
+  font-size: 12px;
+  line-height: 1.17;
+
+  text-align: center;
 }
 
 .hero-card-strawberry .img-decor-hero {
@@ -211,7 +220,7 @@ h2.hero-title {
 }
 
 .list-item-hero {
-  max-width: 280px;
+  max-width: 265px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -222,92 +231,112 @@ h2.hero-title {
 }
 
 .item-hero {
+  max-height: 38px;
+
   display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
 
   border: 1px solid #ffffff;
   border-radius: 1000px;
-  width: calc((100% - 8px) / 2);
+
   padding: 12px 32px;
 }
 
 .item-hero h3 {
-  margin: 0;
+  margin: 0px;
   padding: 0;
-
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: -0.04em;
   text-transform: uppercase;
 }
 
-.cards-items-hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.item-hero.item-organic {
+  max-width: 125px;
 }
 
-.smallbanana {
-  position: absolute;
-  left: 6%;
-  top: 1px;
-  transform: translate(-50%);
+.item-hero.item-products {
+  max-width: 132px;
 }
 
-.smallstravbery {
-  position: absolute;
-  right: -35px;
-  top: -50px;
-  transform: translate(-50%);
+.item-hero.item-basket {
+  max-width: 125px;
+}
+
+.item-hero.item-fruits {
+  width: 132px;
 }
 
 @media screen and (min-width: 768px) {
-  h1 {
+  .hero-container {
+    padding-top: 64px;
+  }
+
+  h1.hero-title {
     max-width: 704px;
     width: 100%;
-    /* margin-top: 64px; */
     font-size: 50px;
     line-height: 1.08;
-    top: 110px;
   }
 
   .wrapper-hero-btn {
-    display: flex;
-    width: 452px;
-
     margin-left: auto;
     margin-right: auto;
-    /* justify-self: center; */
   }
 
-  .yonggirl {
-    width: 452px;
+  .wrapper-hero-btn::before {
+    width: 146px;
+    height: 90px;
+
+    top: 21px;
+    left: -3px;
   }
 
-  .cards-items-hero {
-    flex-direction: row;
-    margin-top: 44px;
+  .wrapper-hero-btn::after {
+    width: 118px;
+    height: 109px;
+    top: -95px;
+    right: 0px;
+  }
+
+  .link-shopnow {
+    width: 114px;
+    height: 114px;
+    left: 42.63%;
+    bottom: -18px;
+
+    font-size: 28px;
+  }
+
+  .cards-place {
+    display: flex;
     justify-content: space-between;
+  }
+
+  .hero-card-thumb {
+    padding-left: 32px;
   }
 
   .cards-items-watermelon {
     display: block;
+    margin-bottom: 0;
+    max-width: 281px;
+  }
+
+  .hero-paragraph {
+    margin: 0;
+    margin-bottom: 45px;
   }
 
   .cards-items-strawberry {
     display: flex;
     flex-direction: column-reverse;
-    max-width: 299px;
+    max-width: 281px;
   }
 
-  .hero-paragraph {
-    width: 279px;
-    margin: 0;
-    margin-bottom: 45px;
+  .hero-card-thumb-strawberry {
+    padding-right: 32px;
   }
 
   .hero-card-strawberry {
@@ -315,35 +344,26 @@ h2.hero-title {
     margin-bottom: 44px;
   }
 
+  .list-item-hero {
+    margin-bottom: 0;
+    justify-content: flex-end;
+    max-width: 266px;
+  }
+
   .item-hero {
     flex-basis: content;
   }
 
-  .list-item-hero {
-    justify-content: flex-end;
+  .item-hero.item-products {
+    max-width: 133px;
   }
 
-  .smallbanana {
-    left: 10%;
-    top: 200px;
-    transform: translate(-50%);
+  .item-hero.item-basket {
+    max-width: 115px;
   }
 
-  .smallstravbery {
-    right: 1px;
-    top: 120px;
-  }
-
-  .shop-btn {
-    width: 114px;
-    height: 114px;
-
-    bottom: -40px;
-  }
-
-  .hero-btn-parag {
-    font-size: 28px;
-    line-height: 28px;
+  .item-hero.item-fruits {
+    width: 110px;
   }
 }
 
