@@ -126,7 +126,6 @@
   }
   .contacts-img-tablet {
     display: flex;
-    flex-wrap: wrap;
     gap: 16px;
   }
   .contacts-text {
@@ -171,7 +170,6 @@
   }
   .contacts-img-desktop {
     display: flex;
-    flex-wrap: wrap;
     gap: 24px;
   }
 }
