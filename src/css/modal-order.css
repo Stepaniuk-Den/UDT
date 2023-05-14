@@ -307,6 +307,7 @@ fieldset {
 
   .cards-list {
     display: flex;
+    justify-content: space-around;
     gap: 12px;
   }
 
