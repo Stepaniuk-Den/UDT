@@ -380,6 +380,10 @@ fieldset {
     line-height: 1.17;
   }
 
+  .cards-list {
+    gap: 20px;
+  }
+
   .card-strawberry {
     width: 257px;
   }
