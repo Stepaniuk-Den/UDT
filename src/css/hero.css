@@ -9,7 +9,6 @@ h1.hero-title {
   letter-spacing: -0.04em;
   text-transform: uppercase;
 
-  min-width: 320px;
   max-width: 335px;
 
   z-index: 1;
@@ -19,6 +18,52 @@ h1.hero-title {
   position: relative;
   display: flex;
   margin: 0 auto 71px auto;
+}
+
+.wrapper-hero-btn::before {
+  content: '';
+  display: block;
+  width: 94px;
+  height: 54px;
+  position: absolute;
+  top: 19px;
+  left: -14px;
+
+  background-image: url(./img/mobile/hero-fruit1-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .wrapper-hero-btn::before {
+    background-image: url(./img/mobile/hero-fruit1-mobile@2x.png);
+  }
+}
+
+.wrapper-hero-btn::after {
+  content: '';
+  display: block;
+  width: 58px;
+  height: 56px;
+  position: absolute;
+  top: -43px;
+  right: -1px;
+
+  background-image: url(./img/mobile/hero-fruit2-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .wrapper-hero-btn::after {
+    background-image: url(./img/mobile/hero-fruit2-mobile@2x.png);
+  }
 }
 
 .yonggirl {
