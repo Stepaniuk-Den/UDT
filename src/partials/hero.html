@@ -34,11 +34,35 @@
           loading="lazy"
         />
       </picture>
-      <img
-        class="smallstravbery"
-        src="./img/mobile/hero-fruit2-mobile.png"
-        alt=""
-      />
+      <picture>
+        <source
+          srcset="
+            ./img/Desktop/hero-fruit2.png    1x,
+            ./img/Desktop/hero-fruit2@2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./img/Tablet/hero-fruit2-tablet.png    1x,
+            ./img/Tablet/hero-fruit2-tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./img/mobile/hero-fruit2-mobile.png    1x,
+            ./img/mobile/hero-fruit2-mobile@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          class="smallstravbery"
+          src="./img/mobile/hero-fruit2-mobile.png"
+          aria-label="strawberry"
+          loading="lazy"
+        />
+      </picture>
     </div>
 
     <div class="wrapper-hero-btn">
