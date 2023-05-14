@@ -19,8 +19,9 @@ h1 {
   transform: translate(-50%);
   z-index: 1;
 
-  min-width: 320px;
-  max-width: 335px;
+  min-width: 335px;
+  /* min-width: 320px;
+  max-width: 335px; */
 }
 
 .yonggirl {
@@ -113,7 +114,6 @@ h1 {
   transform: translate(-50%);
   z-index: 1;
 }
-
 
 .hero-card-watermelon {
   display: flex;
@@ -225,6 +225,14 @@ h1 {
   display: contents;
 }
 
+@media screen and (max-width: 335px) {
+  h1 {
+    min-width: 320px;
+    font-size: 24px;
+    line-height: 1;
+  }
+}
+
 @media screen and (min-width: 768px) {
   h1 {
     max-width: 704px;
@@ -295,7 +303,6 @@ h1 {
   }
 
   .shop-btn {
-
     width: 114px;
     height: 114px;
 
@@ -312,6 +319,7 @@ h1 {
   h1 {
     max-width: 898px;
     margin-top: -40px;
+    font-size: 64px;
   }
 
   .cards-items-hero {
@@ -336,5 +344,4 @@ h1 {
     right: 23%;
     top: 70px;
   }
-
 }
