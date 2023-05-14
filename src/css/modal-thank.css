@@ -1,92 +1,119 @@
-.modal-thank-you {
-  display: none;
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+  transition: visibility 250ms ease-in-out, opacity 250ms ease-in-out;
+  z-index: 9;
 }
 
+.backdrop.thanks-is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+/* Anim */
+
+.modal-title-ty.focus-in-expand{-webkit-animation:focus-in-expand 1.5s cubic-bezier(.25,.46,.45,.94) infinite alternate forwards;animation:focus-in-expand 1.5s cubic-bezier(.25,.46,.45,.94) infinite alternate forwards}
+
+@-webkit-keyframes focus-in-expand{0%{letter-spacing:-.5em;-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes focus-in-expand{0%{letter-spacing:-.5em;-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+
+
+.modal-thank-you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 335px;
+  /* width: 90%;
+  height: 90%; */
+  background-color: #e03f5e;
+  padding: 40px 20px;
+  border-radius: 20px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms ease-in-out;
+}
+
+.backdrop.thanks-is-hidden .modal-thank-you {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.modal-title-ty {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 14px;
+  color: var(--color-white);
+}
+
+.modal-text-ty {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.29;
+  max-width: 295px;
+}
+
+.modal-ty-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.modal-ty {
+  stroke: #ffffff;
+  width: 24px;
+  height: 24px;
+}
+
+.raspberry-img {
+  margin-bottom: 20px;
+}
+
+
+
 @media screen and (min-width: 768px) {
-  .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: initial;
-    transition: visibility 250ms ease-in-out, opacity 250ms ease-in-out;
-    z-index: 9;
-  }
-
-  .backdrop.thanks-is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-  }
-
-  /* Anim */
-
-  .modal-title-ty.focus-in-expand{-webkit-animation:focus-in-expand 1.5s cubic-bezier(.25,.46,.45,.94) infinite alternate forwards;animation:focus-in-expand 1.5s cubic-bezier(.25,.46,.45,.94) infinite alternate forwards}
-
-  @-webkit-keyframes focus-in-expand{0%{letter-spacing:-.5em;-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes focus-in-expand{0%{letter-spacing:-.5em;-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
-  
 
   .modal-thank-you {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
     max-width: 600px;
     /* width: 90%;
     height: 90%; */
-    background-color: #e03f5e;
     padding: 68px 104px 80px 104px;
-    border-radius: 20px;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms ease-in-out;
   }
 
-  .backdrop.thanks-is-hidden .modal-thank-you {
-    transform: translate(-50%, -50%) scale(1.2);
-  }
-
-  .modal-title-ty {
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 28px;
-    text-align: center;
-    margin-bottom: 14px;
-    color: var(--color-white);
-  }
-
+  
   .modal-text-ty {
-    text-align: center;
-    font-size: 14px;
-    line-height: 1.29;
     max-width: 391px;
-  }
-
-  .modal-ty-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: none;
-    background-color: transparent;
-    padding: 0;
-  }
-
-  .modal-ty {
-    stroke: #ffffff;
   }
 
   .raspberry-img {
     margin-bottom: 28px;
   }
+
+  .modal-ty {
+  width: 28px;
+  height: 28px;
+  }
+
+  .modal-ty-btn {
+    width: 28px;
+    height: 28px;
+}
 }
