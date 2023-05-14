@@ -1,72 +1,11 @@
 <section class="section-hero">
   <div class="container hero-container">
-    <div class="wrapper-hero-img">
-      <h1>
-        fresh harvest box <br />
-        is your one-stop place for a delicious fruit basket
-      </h1>
-      <picture>
-        <source
-          srcset="
-            ./img/Desktop/hero-fruit1.png    1x,
-            ./img/Desktop/hero-fruit1@2x.png 2x
-          "
-          media="(min-width: 1280px)"
-        />
-        <source
-          srcset="
-            ./img/Tablet/hero-fruit1-tablet.png    1x,
-            ./img/Tablet/hero-fruit1-tablet@2x.png 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
-            ./img/mobile/hero-fruit1-mobile.png    1x,
-            ./img/mobile/hero-fruit1-mobile@2x.png 2x
-          "
-          media="(max-width: 767px)"
-        />
-        <img
-          class="smallbanana"
-          src="./img/mobile/hero-fruit1-mobile.png"
-          aria-label="small banana"
-          loading="lazy"
-        />
-      </picture>
-      <picture>
-        <source
-          srcset="
-            ./img/Desktop/hero-fruit2.png    1x,
-            ./img/Desktop/hero-fruit2@2x.png 2x
-          "
-          media="(min-width: 1280px)"
-        />
-        <source
-          srcset="
-            ./img/Tablet/hero-fruit2-tablet.png    1x,
-            ./img/Tablet/hero-fruit2-tablet@2x.png 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
-            ./img/mobile/hero-fruit2-mobile.png    1x,
-            ./img/mobile/hero-fruit2-mobile@2x.png 2x
-          "
-          media="(max-width: 767px)"
-        />
-        <img
-          class="smallstravbery"
-          src="./img/mobile/hero-fruit2-mobile.png"
-          aria-label="strawberry"
-          loading="lazy"
-        />
-      </picture>
-    </div>
+    <h1 class="hero-title">
+      fresh harvest box is your one-stop place for a delicious fruit basket
+    </h1>
 
     <div class="wrapper-hero-btn">
-      <picture>
+      <picture class="hero-picture">
         <source
           srcset="
             ./img/desktop/heromain-desktop.png    1x,
@@ -80,7 +19,6 @@
             ./img/tablet/heromain-tablet@2x.png 2x
           "
           media="(min-width: 768px)"
-          sizes="(min-width: 768px) 452px, 311px"
         />
         <source
           srcset="
@@ -96,60 +34,90 @@
           loading="lazy"
         />
       </picture>
-      <span class="shop-btn">
-        <button class="hero-btn-parag" type="button">shop now</button>
-      </span>
+      <a href="#fruits" class="link-shopnow">shop now</a>
     </div>
-    <div class="cards-items-hero">
-      <div class="cards-items-watermelon">
-        <p class="hero-paragraph">
-          Our expertly curated fruit baskets are made with the freshest, highest
-          quality fruits available. Whether you are looking for a healthy snack
-          or a gift for a loved one, Fresh Harvest Box has got you covered.
-        </p>
-
-        <div class="hero-card-watermelon">
-          <h2 class="hero-title">Fruit</h2>
-          <div class="img-decor-hero">
-            <img src="./img/fruits/watermelon.png" alt="" width="200px" />
-          </div>
-          <p class="hero-card-parag">
-            Refreshing and juicy, watermelon is the perfect summer treat and a
-            great source of hydration
-          </p>
-        </div>
-      </div>
-
-      <div class="cards-items-strawberry">
-        <ul class="list-item-hero">
-          <li class="item-hero item-hero-organic">
-            <h3>#organic</h3>
-          </li>
-          <li class="item-hero item-hero-products">
-            <h3>#products</h3>
-          </li>
-          <li class="item-hero item-hero-basket">
-            <h3>#basket</h3>
-          </li>
-          <li class="item-hero item-hero-fruits">
-            <h3>#fruits</h3>
-          </li>
-        </ul>
-
-        <div class="hero-card-strawberry">
-          <h2 class="hero-title">Fruit</h2>
-          <div class="img-decor-hero">
+    <!-- <picture>
+              <source
+                srcset="
+                  ./img/desktop/hero-fruit1.png    1x,
+                  ./img/desktop/hero-fruit1@2x.png 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./img/tablet/hero-fruit1-tablet.png    1x,
+                  ./img/tablet/hero-fruit1-tablet@2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./img/mobile/hero-fruit1-mobile.png    1x,
+                  ./img/mobile/hero-fruit1-mobile@2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                class="smallbanana"
+                src="./img/mobile/hero-fruit1-mobile.png"
+                alt="small banana"
+                loading="lazy"
+              />
+            </picture>
             <img
-              src="./img/mobile/strawberryherocard.png"
+              class="smallstravbery"
+              src="./img/mobile/hero-fruit2-mobile.png"
               alt=""
-              width="200px"
-            />
-          </div>
-          <p class="hero-card-parag">
-            Sweet and juicy, strawberries are packed with vitamin C and
-            antioxidants, making them a delicious and healthy snack
-          </p>
+            /> -->
+
+    <div class="cards-items-watermelon">
+      <p class="hero-paragraph">
+        Our expertly curated fruit baskets are made with the freshest, highest
+        quality fruits available. Whether you are looking for a healthy snack or
+        a gift for a loved one, Fresh Harvest Box has got you covered.
+      </p>
+
+      <div class="hero-card-watermelon">
+        <h2 class="hero-title">Fruit</h2>
+        <div class="img-decor-hero">
+          <img
+            src="./img/fruits/watermelon.png"
+            alt="watermelon"
+            width="200px"
+          />
         </div>
+        <p class="hero-card-parag">
+          Refreshing and juicy, watermelon is the perfect summer treat and a
+          great source of hydration
+        </p>
+      </div>
+    </div>
+    <div class="cards-items-strawberry">
+      <ul class="list-item-hero">
+        <li class="item-hero item-hero-organic">
+          <h3>#organic</h3>
+        </li>
+        <li class="item-hero item-hero-products">
+          <h3>#products</h3>
+        </li>
+        <li class="item-hero item-hero-basket">
+          <h3>#basket</h3>
+        </li>
+        <li class="item-hero item-hero-fruits">
+          <h3>#fruits</h3>
+        </li>
+      </ul>
+
+      <div class="hero-card-strawberry">
+        <h2 class="hero-title">Fruit</h2>
+        <div class="img-decor-hero">
+          <img src="./img/mobile/strawberryherocard.png" alt="" width="200px" />
+        </div>
+        <p class="hero-card-parag">
+          Sweet and juicy, strawberries are packed with vitamin C and
+          antioxidants, making them a delicious and healthy snack
+        </p>
       </div>
     </div>
   </div>
