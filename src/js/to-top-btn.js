@@ -1,3 +1,4 @@
+(() => {
 const scrollToTop = document.querySelector('.scroll-to-top');
 
 
@@ -8,3 +9,4 @@ const showBtn = window.addEventListener('scroll', () => {
     scrollToTop.classList.remove('scroll-to-top');
     }
 });
+})();
