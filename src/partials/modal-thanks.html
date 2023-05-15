@@ -1,27 +1,32 @@
-<div class="backdrop thanks-is-hidden" thanks-data-modal>
+<div class="backdrop thanks-is-hidden" data-thanks-modal>
   <div class="modal-thank-you">
-    <button class="modal-ty-btn" thanks-data-modal-close>
+    <button class="modal-ty-btn" data-thanks-modal-close>
       <svg class="modal-ty">
         <use href="./img/icons.svg#icon-close"></use>
       </svg>
     </button>
-<picture class="raspberry-img">
-  <source
-  media="(min-width:768px)"
-  srcset="./img/Desktop/modal2-fruit.png 1x,
-  ./img/Desktop/modal2-fruit@2x.png 2x" />
+    <picture class="raspberry-img">
+      <source
+        media="(min-width:768px)"
+        srcset="
+          ./img/Desktop/modal2-fruit.png    1x,
+          ./img/Desktop/modal2-fruit@2x.png 2x
+        "
+      />
 
-  <source
-    media="(max-width: 767px)"
-    srcset="
-    ./img/mobile/modal2-mobile.png    1x,
-    ./img/mobile/modal2-mobile@2x.png 2x,
-    " />
-  <img
-    src="./img/mobile/modal2-mobile.png"
-    alt="raspberry"
-    loading="lazy">
-</picture>
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./img/mobile/modal2-mobile.png    1x,
+          ./img/mobile/modal2-mobile@2x.png 2x
+        "
+      />
+      <img
+        src="./img/mobile/modal2-mobile.png"
+        alt="raspberry"
+        loading="lazy"
+      />
+    </picture>
 
     <h2 class="modal-title-ty focus-in-expand">THANK YOU</h2>
     <p class="modal-text-ty">
@@ -32,4 +37,3 @@
     </p>
   </div>
 </div>
-
