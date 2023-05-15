@@ -108,6 +108,7 @@
   margin: 0 auto;
 }
 .fruits-img-thumb {
+  position: relative;
   margin: 0 0 22px 0;
 }
 
@@ -225,7 +226,6 @@
   }
 
   .fruits-img-thumb {
-    position: relative;
     margin: 0 0 6px 0;
   }
 
@@ -236,6 +236,8 @@
   }
 
   .btn-order {
+    width: 114px;
+    height: 114px;
     padding: 38px 0;
     gap: 10px;
     font-size: 18px;
