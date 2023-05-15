@@ -1,5 +1,8 @@
+/* NEW HERO */
 .hero-container {
   padding-top: 56px;
+}
+.hero-container {
   padding-bottom: 80px;
 }
 
@@ -23,17 +26,6 @@ h1.hero-title {
   position: relative;
   display: flex;
   margin: 0 auto 71px auto;
-
-  animation: hero-opacity 3s ease-in-out both;
-}
-
-@keyframes hero-opacity {
-  0% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .wrapper-hero-btn::before {
@@ -153,7 +145,7 @@ h1.hero-title {
   background-color: #a4cb66;
   border-radius: 500px;
 }
-
+/* old hero */
 .hero-title-watermelon {
   margin: 0 0 61px 0;
   font-size: 12px;
@@ -161,12 +153,7 @@ h1.hero-title {
 
   text-align: center;
 }
-
-.img-decor-hero {
-  position: relative;
-  margin-bottom: 2px;
-}
-
+/* /old hero */
 .hero-card-parag {
   max-width: 155px;
   margin: 0;
@@ -177,6 +164,11 @@ h1.hero-title {
 
   text-transform: uppercase;
   text-align: center;
+}
+
+.img-decor-hero {
+  position: relative;
+  margin-bottom: 2px;
 }
 
 .img-decor-hero::after {
@@ -196,6 +188,22 @@ img {
   width: 100%;
 }
 
+.hero-title-watermelon {
+  margin: 0 0 61px 0;
+  font-size: 12px;
+  line-height: 1.17;
+
+  text-align: center;
+}
+
+.hero-title-strawberry {
+  margin: 0 0 19px 0;
+  font-size: 12px;
+  line-height: 1.17;
+
+  text-align: center;
+}
+
 .cards-items-strawberry {
   display: flex;
   flex-direction: column;
@@ -213,14 +221,6 @@ img {
 
   background-color: #f5ce13;
   border-radius: 500px;
-}
-
-.hero-title-strawberry {
-  margin: 0 0 19px 0;
-  font-size: 12px;
-  line-height: 1.17;
-
-  text-align: center;
 }
 
 .hero-card-strawberry .img-decor-hero {
@@ -264,13 +264,32 @@ img {
   text-transform: uppercase;
 }
 
+.cards-items-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (min-width: 768px) {
   .hero-container {
-    padding: 0 32px;
+    padding-top: 64px;
   }
+
+  /* old hero */
+  .hero-container {
+    padding-top: 64px;
+    padding-bottom: 0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  /* /old hero */
 
   h1.hero-title {
     max-width: 704px;
+    width: 100%;
     font-size: 50px;
     line-height: 1.08;
   }
@@ -280,6 +299,14 @@ img {
     margin-right: auto;
   }
 
+  .wrapper-hero-btn::before {
+    width: 146px;
+    height: 90px;
+
+    top: 21px;
+    left: -3px;
+  }
+  /* old hero */
   .wrapper-hero-btn::before {
     width: 170px;
     height: 170px;
@@ -294,7 +321,15 @@ img {
       background-image: url(../img/Tablet/hero-fruit1-tablet@2x.png);
     }
   }
+  /* /old hero */
 
+  .wrapper-hero-btn::after {
+    width: 118px;
+    height: 109px;
+    top: -95px;
+    right: 0px;
+  }
+  /* old hero */
   .wrapper-hero-btn::after {
     width: 118px;
     height: 110px;
@@ -318,16 +353,30 @@ img {
     max-width: 452px;
     height: auto;
   }
+  /* /old hero */
 
   .link-shopnow {
     width: 114px;
     height: 114px;
-    left: 179px;
+    left: 42.63%;
+    /* left: 179px; */
     bottom: -18px;
 
     font-size: 28px;
   }
 
+  .cards-place {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cards-items-watermelon {
+    margin-bottom: 0;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    max-width: 281px;
+  }
+  /* old hero */
   .hero-card-thumb {
     padding-left: 32px;
   }
@@ -338,50 +387,63 @@ img {
     width: 281px;
     margin-right: auto;
   }
+  /* /old hero */
 
   .hero-paragraph {
     margin: 0;
     margin-bottom: 45px;
   }
 
+  .cards-items-hero {
+    flex-direction: row;
+    margin-top: 44px;
+    justify-content: space-between;
+  }
+
   .cards-items-strawberry {
     display: flex;
     flex-direction: column-reverse;
-    max-width: 281px;
-  }
-
-  .hero-card-thumb-strawberry {
-    padding-right: 32px;
-    margin-bottom: 44px;
+    max-width: 299px;
   }
 
   .hero-card-strawberry {
     margin: 0;
+    margin-bottom: 44px;
   }
 
-  .list-item-hero {
-    margin-bottom: 0;
-    justify-content: flex-end;
-    max-width: 266px;
+  /* old hero */
+  .hero-card-thumb-strawberry {
+    padding-right: 32px;
   }
+  /* /old hero */
 
   .item-hero {
     flex-basis: content;
   }
+
+  .list-item-hero {
+    justify-content: flex-end;
+  }
+
+  .shop-btn {
+    width: 114px;
+    height: 114px;
+
+    bottom: -40px;
+  }
+
+  .hero-btn-parag {
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-  .card-place-hero {
-    position: relative;
+  /* old hero */
+  .hero-container {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    padding-top: 64px;
-    padding-bottom: 238px;
-  }
-
-  .hero-container {
-    display: block;
   }
 
   h1.hero-title {
@@ -389,6 +451,18 @@ img {
     font-size: 64px;
     line-height: 1;
     margin: 0 auto -140px auto;
+  }
+  .wrapper-hero-btn {
+    animation: hero-opacity 3s ease-in-out both;
+  }
+
+  @keyframes hero-opacity {
+    0% {
+      opacity: 0.1;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   .wrapper-hero-btn::before {
@@ -426,7 +500,7 @@ img {
   .cards-items-watermelon {
     position: absolute;
     top: 408px;
-    left: 30px;
+    left: 62px;
     display: block;
     margin-bottom: 0;
     width: 249px;
@@ -438,7 +512,7 @@ img {
   .cards-items-strawberry {
     position: absolute;
     top: 336px;
-    right: 13px;
+    right: 45px;
     display: flex;
     flex-direction: column-reverse;
     width: 281px;
@@ -450,5 +524,34 @@ img {
     margin: 0;
     margin-bottom: 44px;
     max-width: 222px;
+  }
+  /* /old hero */
+
+  h1 {
+    max-width: 898px;
+    margin-top: -40px;
+  }
+
+  .cards-items-hero {
+    position: relative;
+    bottom: 500px;
+  }
+
+  .section-hero {
+    max-height: 1000px;
+  }
+
+  .cards-items-strawberry {
+    margin-bottom: 300px;
+  }
+
+  .smallbanana {
+    left: 25%;
+    top: 150px;
+  }
+
+  .smallstravbery {
+    right: 23%;
+    top: 70px;
   }
 }
