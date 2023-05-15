@@ -1,12 +1,13 @@
 .hero-container {
   padding-top: 56px;
+  padding-bottom: 80px;
 }
 
 h1.hero-title {
   position: relative;
   font-weight: 500;
   font-size: 28px;
-  line-height: 1;
+  line-height: 1.08;
   margin: 0 0 -73px 0;
 
   text-align: center;
@@ -261,7 +262,7 @@ img {
 }
 
 .item-hero.item-basket {
-  max-width: 125px;
+  width: 125px;
 }
 
 .item-hero.item-fruits {
@@ -271,11 +272,15 @@ img {
 @media screen and (min-width: 768px) {
   .hero-container {
     padding-top: 64px;
+    padding-bottom: 137px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   h1.hero-title {
-    max-width: 704px;
-    width: 100%;
+    min-width: 704px;
     font-size: 50px;
     line-height: 1.08;
   }
@@ -286,32 +291,52 @@ img {
   }
 
   .wrapper-hero-btn::before {
-    width: 146px;
-    height: 90px;
+    width: 170px;
+    height: 170px;
+    top: 3px;
+    left: -127px;
+    background-image: url(./img/Tablet/hero-fruit1-tablet.png);
+  }
 
-    top: 21px;
-    left: -3px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .wrapper-hero-btn::before {
+      background-image: url(./img/Tablet/hero-fruit1-tablet@2x.png);
+    }
   }
 
   .wrapper-hero-btn::after {
     width: 118px;
-    height: 109px;
+    height: 110px;
     top: -95px;
-    right: 0px;
+    right: -129px;
+    background-image: url(./img/Tablet/hero-fruit2-tablet.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .wrapper-hero-btn::after {
+      background-image: url(./img/Tablet/hero-fruit2-tablet@2x.png);
+    }
+  }
+
+  .yonggirl {
+    border-radius: 500px;
+
+    display: block;
+    max-width: 452px;
+    height: auto;
   }
 
   .link-shopnow {
     width: 114px;
     height: 114px;
-    left: 42.63%;
+    left: 179px;
     bottom: -18px;
 
     font-size: 28px;
-  }
-
-  .cards-place {
-    display: flex;
-    justify-content: space-between;
   }
 
   .hero-card-thumb {
@@ -321,7 +346,8 @@ img {
   .cards-items-watermelon {
     display: block;
     margin-bottom: 0;
-    max-width: 281px;
+    width: 281px;
+    margin-right: auto;
   }
 
   .hero-paragraph {
@@ -332,16 +358,16 @@ img {
   .cards-items-strawberry {
     display: flex;
     flex-direction: column-reverse;
-    max-width: 281px;
+    width: 281px;
   }
 
   .hero-card-thumb-strawberry {
     padding-right: 32px;
+    margin-bottom: 44px;
   }
 
   .hero-card-strawberry {
     margin: 0;
-    margin-bottom: 44px;
   }
 
   .list-item-hero {
@@ -368,31 +394,90 @@ img {
 }
 
 @media screen and (min-width: 1280px) {
-  h1 {
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-bottom: 238px;
+  }
+
+  h1.hero-title {
     max-width: 898px;
-    margin-top: -40px;
+    font-size: 64px;
+    line-height: 1;
+    margin: 0 auto -140px auto;
+  }
+  .wrapper-hero-btn {
+    animation: hero-opacity 3s ease-in-out both;
   }
 
-  .cards-items-hero {
-    position: relative;
-    bottom: 500px;
+  @keyframes hero-opacity {
+    0% {
+      opacity: 0.1;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
-  .section-hero {
-    max-height: 1000px;
+  .wrapper-hero-btn::before {
+    width: 244px;
+    height: 170px;
+    top: 79px;
+    left: -213px;
+    background-image: url(./img/Desktop/hero-fruit1.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .wrapper-hero-btn::before {
+      background-image: url(./img/Desktop/hero-fruit1@2x.png);
+    }
+  }
+
+  .wrapper-hero-btn::after {
+    width: 133px;
+    height: 120px;
+    top: -81px;
+    right: -198px;
+    background-image: url(./img/Desktop/hero-fruit2.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .wrapper-hero-btn::after {
+      background-image: url(./img/Desktop/hero-fruit2@2x.png);
+    }
+  }
+
+  .cards-items-watermelon {
+    position: absolute;
+    top: 408px;
+    left: 62px;
+    display: block;
+    margin-bottom: 0;
+    width: 249px;
+    margin-right: auto;
+
+    animation: hero-opacity 3s ease-in-out both;
   }
 
   .cards-items-strawberry {
-    margin-bottom: 300px;
+    position: absolute;
+    top: 336px;
+    right: 45px;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 281px;
+
+    animation: hero-opacity 3s ease-in-out both;
   }
 
-  .smallbanana {
-    left: 25%;
-    top: 150px;
-  }
-
-  .smallstravbery {
-    right: 23%;
-    top: 70px;
+  .hero-paragraph {
+    margin: 0;
+    margin-bottom: 44px;
+    max-width: 222px;
   }
 }
