@@ -1,388 +1,263 @@
-.hero-container {
-  padding-top: 56px;
-}
-
-h1.hero-title {
-  position: relative;
+.fruits-section-title {
+  margin: 0 0 14px 0;
   font-weight: 500;
   font-size: 28px;
-  line-height: 1.08;
-  margin: 0 0 -73px 0;
-
+  line-height: 1;
   text-align: center;
-  letter-spacing: -0.04em;
   text-transform: uppercase;
-
-  max-width: 335px;
-
-  z-index: 1;
 }
 
-.wrapper-hero-btn {
-  position: relative;
+.fruits-text {
+  text-align: center;
+  margin: 0 0 44px 0;
+}
+
+.fruits-list {
   display: flex;
-  margin: 0 auto 71px auto;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0 0 44px 0;
+  padding: 0;
+
+  list-style: none;
 }
 
-.wrapper-hero-btn::before {
-  content: '';
-  display: block;
-  width: 94px;
-  height: 54px;
-  position: absolute;
-  top: 19px;
-  left: -14px;
+.fruits-item {
+  max-width: 335px;
+  border-radius: 20px;
+  padding: 64px 24px 24px 24px;
+  transform: scale(1);
+  transition: transfom 250ms linear;
+}
+.fruits-item:hover {
+  transform: scale(1.02);
 
-  background-image: url(../img/mobile/hero-fruit1-mobile.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  box-shadow: 0px 0px 12px 5px rgba(84, 3, 3, 0.75);
+  -webkit-box-shadow: 0px 0px 12px 5px rgba(84, 3, 3, 0.75);
+  -moz-box-shadow: 0px 0px 12px 5px rgba(84, 3, 3, 0.75);
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .wrapper-hero-btn::before {
-    background-image: url(../img/mobile/hero-fruit1-mobile@2x.png);
+.fruits-item:hover .kenburns-top {
+  -webkit-animation: kenburns-top 350ms ease-out both;
+  animation: kenburns-top 350ms ease-out both;
+}
+
+@-webkit-keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.05) translateY(-15px);
+    transform: scale(1.05) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
   }
 }
 
-.wrapper-hero-btn::after {
-  content: '';
+.fruits-item:nth-last-child(-n + 3) {
+  display: none;
+}
+.strawberry {
+  background: #f8766b;
+}
+.banana {
+  background: #edd251;
+}
+.watermelon {
+  background: #9dc262;
+}
+
+.lime {
+  background: #bfd663;
+}
+.apple {
+  background: #e93f29;
+}
+.peach {
+  background: #db4f4b;
+}
+
+.plums {
+  background: #9b5366;
+}
+
+.orange {
+  background: #f47f4c;
+}
+
+.kiwi {
+  background: #98b37e;
+}
+
+.fruits-item-title {
+  margin: 0 0 8px 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+}
+.fruits-item-text {
+  margin: 0 0 4px 0;
+}
+
+.fruits-item-image {
   display: block;
-  width: 58px;
-  height: 56px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.fruits-img-thumb {
+  margin: 0 0 22px 0;
+}
+
+.fruits-img-thumb::after {
+  content: '';
   position: absolute;
-  top: -43px;
-  right: -1px;
-
-  background-image: url(../img/mobile/hero-fruit2-mobile.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .wrapper-hero-btn::after {
-    background-image: url(../img/mobile/hero-fruit2-mobile@2x.png);
-  }
-}
-
-.yonggirl {
-  border-radius: 500px;
-
+  left: 17.4%;
+  bottom: -7.78%;
   display: block;
   width: 100%;
-  height: auto;
-
-  padding: 17px;
-  background-color: var(--color-red);
-
-  box-shadow: 0px -2px 0px 0px rgba(174, 19, 50, 0.5),
-    0px 1.5px 0px 0.4px rgba(255, 255, 255, 0.5);
-}
-
-.link-shopnow {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1;
-  background: #ffffff;
-  display: flex;
-  width: 80px;
-  height: 80px;
+  max-width: 195px;
+  height: 100%;
+  max-height: 38px;
   border-radius: 50%;
-  text-align: center;
-  align-items: center;
 
-  text-transform: uppercase;
-
-  color: #ae1332;
-  border: none;
-  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-  transform: rotate(-14deg);
-
-  position: absolute;
-  left: 38.21%;
-  bottom: -40px;
-
-  z-index: 1;
-}
-
-.link-shopnow:hover,
-.link-shopnow:focus {
-  color: #a4cb66;
-}
-
-.cards-items-watermelon {
-  margin-bottom: 44px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.hero-paragraph {
-  max-width: 279px;
-  margin: 0 0 44px 0;
-  line-height: 1.29;
-  letter-spacing: -0.04em;
-}
-
-.hero-card-watermelon {
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-
-  padding: 28px 25px 40px 25px;
-
-  max-width: 249px;
-  background-color: #a4cb66;
-  border-radius: 500px;
-}
-
-.hero-card-parag {
-  max-width: 155px;
-  margin: 0;
-
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.16;
-
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.img-decor-hero {
-  position: relative;
-  margin-bottom: 2px;
-}
-
-.img-decor-hero::after {
-  content: '';
   background: #000000;
-  mix-blend-mode: normal;
   opacity: 0.1;
   filter: blur(13.5914px);
-  position: absolute;
-  width: 100%;
-  height: 38px;
-  top: 80%;
-  right: 1%;
 }
 
-img {
-  width: 100%;
-}
-
-.hero-title-watermelon {
-  margin: 0 0 61px 0;
-  font-size: 12px;
-  line-height: 1.17;
-
-  text-align: center;
-}
-
-.hero-title-strawberry {
-  margin: 0 0 19px 0;
-  font-size: 12px;
-  line-height: 1.17;
-
-  text-align: center;
-}
-
-.cards-items-strawberry {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.hero-card-strawberry {
-  padding: 28px 43px 40px 43px;
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-
-  max-width: 249px;
-
-  background-color: #f5ce13;
-  border-radius: 500px;
-}
-
-.hero-card-strawberry .img-decor-hero {
-  margin-bottom: 17px;
-}
-
-.hero-card-strawberry .hero-card-parag {
-  max-width: 163px;
-}
-
-.list-item-hero {
-  max-width: 265px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px;
-  margin: 0 0 44px 0;
-  padding: 0;
-}
-
-.item-hero {
+.fruits-item-price {
+  position: relative;
+  z-index: 1;
+  max-width: 126px;
+  padding: 12px 0;
+  margin: 0;
+  border-radius: 200px;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 1.17;
-
-  display: inline-block;
-  align-items: center;
   text-align: center;
-  justify-content: center;
-
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-
-  border: 1px solid #ffffff;
-  border-radius: 1000px;
-
-  padding: 12px 32px;
+  color: #ae1332;
+  background: #ffffff;
 }
 
-.item-hero h3 {
-  margin: 0px;
-  padding: 0;
-}
-
-.cards-items-hero {
+.btn-order {
   display: flex;
-  flex-direction: column;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  align-items: end;
   justify-content: center;
-  align-items: center;
+  gap: 6px;
+  padding: 26px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+  border-radius: 50%;
+  border: none;
+  color: #ffffff;
+  background: #9dc262;
+}
+.btn-order:hover,
+.btn-order:focus {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 12px 5px rgba(84, 3, 3, 0.75);
+  -webkit-box-shadow: 0px 0px 12px 5px rgba(84, 3, 3, 0.75);
+  -moz-box-shadow: 0px 0px 12px 5px rgba(84, 3, 3, 0.75);
 }
 
+.icon-arrow {
+  fill: currentColor;
+  width: 14px;
+  height: 14px;
+}
+
+.btn-order-text {
+  transform: rotate(-14deg);
+  transform-origin: bottom left;
+}
+
+/* ADAPTIVE FOR TABLET */
 @media screen and (min-width: 768px) {
-  .hero-container {
-    padding-top: 64px;
+  /* .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  } */
+
+  .fruits-section-title {
+    font-size: 40px;
+    line-height: 1.1;
   }
 
-  h1.hero-title {
-    max-width: 704px;
-    width: 100%;
-    font-size: 50px;
-    line-height: 1.08;
-  }
-
-  .wrapper-hero-btn {
+  .fruits-text {
+    max-width: 547px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .wrapper-hero-btn::before {
-    width: 146px;
-    height: 90px;
-
-    top: 21px;
-    left: -3px;
-  }
-
-  .wrapper-hero-btn::after {
-    width: 118px;
-    height: 109px;
-    top: -95px;
-    right: 0px;
-  }
-
-  .link-shopnow {
-    width: 114px;
-    height: 114px;
-    left: 42.63%;
-    bottom: -18px;
-
-    font-size: 28px;
-  }
-
-  .cards-place {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .cards-items-watermelon {
-    margin-bottom: 0;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    max-width: 281px;
-  }
-
-  .hero-paragraph {
-    margin: 0;
-    margin-bottom: 45px;
-  }
-
-  .cards-items-hero {
+  .fruits-list {
     flex-direction: row;
-    margin-top: 44px;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
   }
 
-  .cards-items-strawberry {
-    display: flex;
-    flex-direction: column-reverse;
-    max-width: 299px;
+  .fruits-item {
+    flex-basis: calc((100% - 16px) / 2);
+    max-width: 344px;
   }
 
-  .hero-card-strawberry {
-    margin: 0;
-    margin-bottom: 44px;
+  .fruits-item:nth-last-child(3),
+  .fruits-item:nth-last-child(2) {
+    display: initial;
   }
 
-  .item-hero {
-    flex-basis: content;
+  .fruits-item-title {
+    font-size: 32px;
+    line-height: 1.19;
   }
 
-  .list-item-hero {
-    justify-content: flex-end;
+  .fruits-item-text {
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
   }
 
-  .shop-btn {
-    width: 114px;
-    height: 114px;
-
-    bottom: -40px;
+  .fruits-img-thumb {
+    position: relative;
+    margin: 0 0 6px 0;
   }
 
-  .hero-btn-parag {
-    font-size: 28px;
-    line-height: 28px;
+  .fruits-item-price {
+    max-width: 136px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  .btn-order {
+    padding: 38px 0;
+    gap: 10px;
+    font-size: 18px;
+    line-height: 1.33;
   }
 }
 
+/* ADAPTIVE FOR DESKTOP */
 @media screen and (min-width: 1280px) {
-  h1 {
-    max-width: 898px;
-    margin-top: -40px;
+  /* .container {
+    max-width: 1280px;
+  } */
+  .fruits-list {
+    gap: 24px;
   }
 
-  .cards-items-hero {
-    position: relative;
-    bottom: 500px;
+  .fruits-item {
+    flex-basis: calc((100% - 24px) / 3);
+    max-width: 389px;
   }
 
-  .section-hero {
-    max-height: 1000px;
-  }
-
-  .cards-items-strawberry {
-    margin-bottom: 300px;
-  }
-
-  .smallbanana {
-    left: 25%;
-    top: 150px;
-  }
-
-  .smallstravbery {
-    right: 23%;
-    top: 70px;
+  .fruits-item:nth-last-child(1) {
+    display: initial;
   }
 }
